@@ -99,7 +99,7 @@ public final class MetadataItem extends Table {
             short width,
             short height,
             int codepointsOffset) {
-        builder.startObject(7);
+        builder.startTable(7);
         MetadataItem.addCodepoints(builder, codepointsOffset);
         MetadataItem.addId(builder, id);
         MetadataItem.addHeight(builder, height);
@@ -111,7 +111,7 @@ public final class MetadataItem extends Table {
     }
 
     public static void startMetadataItem(FlatBufferBuilder builder) {
-        builder.startObject(7);
+        builder.startTable(7);
     }
 
     public static void addId(FlatBufferBuilder builder, int id) {
@@ -153,7 +153,7 @@ public final class MetadataItem extends Table {
     }
 
     public static int endMetadataItem(FlatBufferBuilder builder) {
-        int o = builder.endObject();
+        int o = builder.endTable();
         return o;
     }
 }
