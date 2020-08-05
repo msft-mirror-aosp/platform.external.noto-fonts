@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 #
 # Copyright (C) 2017 The Android Open Source Project
 #
@@ -43,8 +43,6 @@ After execution the following files are generated if they don't exist otherwise,
 - src/java/android/support/text/emoji/flatbuffer/*
 """
 
-from __future__ import print_function
-
 import contextlib
 import csv
 import hashlib
@@ -52,17 +50,18 @@ import itertools
 import json
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
 from fontTools import ttLib
 
 ########### UPDATE OR CHECK WHEN A NEW FONT IS BEING GENERATED ###########
 # Last Android SDK Version
-SDK_VERSION = 29
+SDK_VERSION = 30
 # metadata version that will be embedded into font. If there are updates to the font that would
 # cause data/emoji_metadata.txt to change, this integer number should be incremented. This number
 # defines in which EmojiCompat metadata version the emoji is added to the font.
-METADATA_VERSION = 5
+METADATA_VERSION = 6
 
 ####### main directories where output files are created #######
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -137,9 +136,8 @@ def prepend_header_to_file(file_path):
     with open(file_path, "r+") as original_file:
         with open(FLATBUFFER_HEADER, "r") as copyright_file:
             original_content = original_file.read()
-            start_index = original_content.index("public final class")
             original_file.seek(0)
-            original_file.write(copyright_file.read() + "\n" + original_content[start_index:])
+            original_file.write(copyright_file.read() + "\n" + original_content)
 
 
 def update_flatbuffer_java_files(flatbuffer_java_dir):
@@ -422,7 +420,7 @@ def inject_meta_into_font(ttf, flatbuffer_bin_filename):
     if not 'meta' in ttf:
         ttf['meta'] = ttLib.getTableClass('meta')()
     meta = ttf['meta']
-    with open(flatbuffer_bin_filename) as flatbuffer_bin_file:
+    with open(flatbuffer_bin_filename, 'rb') as flatbuffer_bin_file:
         meta.data[EMOJI_META_TAG_NAME] = flatbuffer_bin_file.read()
 
     # sort meta tables for faster access
@@ -448,7 +446,7 @@ def validate_input_files(font_path, unicode_path):
 
 def add_file_to_sha(sha_algo, file_path):
     with open(file_path, 'rb') as input_file:
-        for data in iter(lambda: input_file.read(8192), ''):
+        for data in iter(lambda: input_file.read(8192), b''):
             sha_algo.update(data)
 
 def create_sha_from_source_files(font_paths):
@@ -491,7 +489,7 @@ class EmojiFontCreator(object):
         """Read image size data from CBDT."""
         cbdt = ttf['CBDT']
         for strike_data in cbdt.strikeData:
-            for key, data in strike_data.iteritems():
+            for key, data in strike_data.items():
                 data.decompile()
                 self.glyph_to_image_metrics_map[key] = data.metrics
 
@@ -501,7 +499,7 @@ class EmojiFontCreator(object):
         cmap = ttf['cmap']
         for table in cmap.tables:
             if table.format == 12 and table.platformID == 3 and table.platEncID == 10:
-                for codepoint, glyph_name in table.cmap.iteritems():
+                for codepoint, glyph_name in table.cmap.items():
                     glyph_to_codepoint_map[glyph_name] = codepoint
                     self.update_emoji_data([codepoint], glyph_name)
                 return table
@@ -546,7 +544,7 @@ class EmojiFontCreator(object):
                         glyph_names = [x["input"] for x in seq]
                         codepoints = [glyph_to_codepoint_map[x] for x in glyph_names]
                         outputs = [x["output"] for x in seq if x["output"]]
-                        nonempty_outputs = filter(lambda x: x.strip() , outputs)
+                        nonempty_outputs = list(filter(lambda x: x.strip() , outputs))
                         if len(nonempty_outputs) == 0:
                             print("Warning: no output glyph is set for " + str(glyph_names))
                             continue
@@ -561,12 +559,12 @@ class EmojiFontCreator(object):
     def get_substitutions(self, lookup_list, index):
         result = []
         for x in lookup_list.Lookup[index].SubTable:
-            for input, output in x.mapping.iteritems():
+            for input, output in x.mapping.items():
                 result.append({"input": input, "output": output})
         return result
 
     def add_gsub_ligature_subtable(self, subtable, glyph_to_codepoint_map):
-        for name, ligatures in subtable.ligatures.iteritems():
+        for name, ligatures in subtable.ligatures.items():
             for ligature in ligatures:
                 glyph_names = [name] + ligature.Component
                 codepoints = [glyph_to_codepoint_map[x] for x in glyph_names]
@@ -649,8 +647,8 @@ class EmojiFontCreator(object):
             total_emoji_count = self.write_metadata_json(output_json_file)
 
             # create the flatbuffers binary and java classes
-            sys_command = 'flatc -o {0} -b -j {1} {2}'
-            os.system(sys_command.format(tmp_dir, FLATBUFFER_SCHEMA, output_json_file))
+            flatc_command = 'flatc -o {0} -b -j {1} {2}'.format(tmp_dir, FLATBUFFER_SCHEMA, output_json_file)
+            subprocess.check_output(flatc_command, shell=True)
 
             # inject metadata binary into font
             inject_meta_into_font(ttf, flatbuffer_bin_file)
