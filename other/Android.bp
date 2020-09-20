@@ -813,18 +813,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansArmenian-Regular.otf",
-    src: "NotoSansArmenian-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansArmenian-Bold.otf",
-    src: "NotoSansArmenian-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansArmenian-Medium.otf",
-    src: "NotoSansArmenian-Medium.otf",
+    name: "NotoSansArmenian-VF.ttf",
+    src: "NotoSansArmenian-VF.ttf",
 }
 
 prebuilt_font {
@@ -903,8 +893,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifArmenian-Bold.otf",
-    src: "NotoSerifArmenian-Bold.otf",
+    name: "NotoSerifArmenian-VF.ttf",
+    src: "NotoSerifArmenian-VF.ttf",
 }
 
 prebuilt_font {
@@ -940,11 +930,6 @@ prebuilt_font {
 prebuilt_font {
     name: "NotoSansWarangCiti-Regular.otf",
     src: "NotoSansWarangCiti-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifArmenian-Regular.otf",
-    src: "NotoSerifArmenian-Regular.otf",
 }
 
 prebuilt_font {

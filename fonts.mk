@@ -25,9 +25,7 @@ PRODUCT_PACKAGES := \
     NotoSansAdlam-VF.ttf \
     NotoSansAhom-Regular.otf \
     NotoSansAnatolianHieroglyphs-Regular.otf \
-    NotoSansArmenian-Bold.otf \
-    NotoSansArmenian-Medium.otf \
-    NotoSansArmenian-Regular.otf \
+    NotoSansArmenian-VF.ttf \
     NotoSansAvestan-Regular.ttf \
     NotoSansBalinese-Regular.ttf \
     NotoSansBamum-Regular.ttf \
@@ -205,8 +203,7 @@ PRODUCT_PACKAGES := \
     NotoSerif-BoldItalic.ttf \
     NotoSerif-Italic.ttf \
     NotoSerif-Regular.ttf \
-    NotoSerifArmenian-Bold.otf \
-    NotoSerifArmenian-Regular.otf \
+    NotoSerifArmenian-VF.ttf \
     NotoSerifBengali-Bold.ttf \
     NotoSerifBengali-Regular.ttf \
     NotoSerifCJK-Regular.ttc \
