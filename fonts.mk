@@ -60,8 +60,7 @@ PRODUCT_PACKAGES := \
     NotoSansDevanagariUI-Regular.otf \
     NotoSansEgyptianHieroglyphs-Regular.ttf \
     NotoSansElbasan-Regular.otf \
-    NotoSansEthiopic-Bold.ttf \
-    NotoSansEthiopic-Regular.ttf \
+    NotoSansEthiopic-VF.ttf \
     NotoSansGeorgian-VF.ttf \
     NotoSansGlagolitic-Regular.ttf \
     NotoSansGothic-Regular.ttf \
@@ -209,8 +208,7 @@ PRODUCT_PACKAGES := \
     NotoSerifCJK-Regular.ttc \
     NotoSerifDevanagari-Bold.ttf \
     NotoSerifDevanagari-Regular.ttf \
-    NotoSerifEthiopic-Bold.otf \
-    NotoSerifEthiopic-Regular.otf \
+    NotoSerifEthiopic-VF.ttf \
     NotoSerifGeorgian-VF.ttf \
     NotoSerifGujarati-Bold.ttf \
     NotoSerifGujarati-Regular.ttf \

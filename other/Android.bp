@@ -183,13 +183,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansEthiopic-Bold.ttf",
-    src: "NotoSansEthiopic-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansEthiopic-Regular.ttf",
-    src: "NotoSansEthiopic-Regular.ttf",
+    name: "NotoSansEthiopic-VF.ttf",
+    src: "NotoSansEthiopic-VF.ttf",
 }
 
 prebuilt_font {
@@ -953,13 +948,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifEthiopic-Bold.otf",
-    src: "NotoSerifEthiopic-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifEthiopic-Regular.otf",
-    src: "NotoSerifEthiopic-Regular.otf",
+    name: "NotoSerifEthiopic-VF.ttf",
+    src: "NotoSerifEthiopic-VF.ttf",
 }
 
 prebuilt_font {
