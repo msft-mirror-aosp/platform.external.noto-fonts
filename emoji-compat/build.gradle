@@ -14,26 +14,18 @@
  * limitations under the License.
  */
 
-apply plugin: 'java'
-apply plugin: 'org.anarres.jarjar'
-apply plugin: 'maven'
-
-ext {
-    flatbuffersDir = '../../flatbuffers'
-}
-
 buildscript {
-    boolean unbundleBuild = (new File("unbundled-build")).exists()
     repositories {
         maven { url '../../../prebuilts/androidx/external' }
-        if (unbundleBuild) {
-            jcenter()
-        }
     }
-
     dependencies {
         classpath 'org.anarres.jarjar:jarjar-gradle:1.0.1'
     }
+}
+
+plugins {
+    id("java")
+    id("org.anarres.jarjar")
 }
 
 sourceSets {
@@ -48,7 +40,7 @@ compileJava {
 }
 
 dependencies {
-    compile 'com.google.flatbuffers:flatbuffers-java:1.12.0'
+    implementation("com.google.flatbuffers:flatbuffers-java:1.12.0")
 }
 
 jarjar.repackage('rename') {
