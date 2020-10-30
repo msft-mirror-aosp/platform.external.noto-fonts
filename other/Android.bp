@@ -763,48 +763,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansGrantha-Regular.ttf",
-    src: "NotoSansGrantha-Regular.ttf",
+    name: "NotoSansTibetan-Bold.ttf",
+    src: "NotoSansTibetan-Bold.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansMedefaidrin-VF.ttf",
-    src: "NotoSansMedefaidrin-VF.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansModi-Regular.ttf",
-    src: "NotoSansModi-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansSoyombo-VF.ttf",
-    src: "NotoSansSoyombo-VF.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansTakri-VF.ttf",
-    src: "NotoSansTakri-VF.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifDogra-Regular.ttf",
-    src: "NotoSerifDogra-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifNyiakengPuachueHmong-VF.ttf",
-    src: "NotoSerifNyiakengPuachueHmong-VF.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifYezidi-VF.ttf",
-    src: "NotoSerifYezidi-VF.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifTibetan-VF.ttf",
-    src: "NotoSerifTibetan-VF.ttf",
+    name: "NotoSansTibetan-Regular.ttf",
+    src: "NotoSansTibetan-Regular.ttf",
 }
 
 prebuilt_font {
