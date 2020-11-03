@@ -448,23 +448,33 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansMyanmar-Bold-ZawDecode.ttf",
-    src: "NotoSansMyanmar-Bold-ZawDecode.ttf",
+    name: "NotoSansMyanmar-Bold.otf",
+    src: "NotoSansMyanmar-Bold.otf",
 }
 
 prebuilt_font {
-    name: "NotoSansMyanmar-Regular-ZawDecode.ttf",
-    src: "NotoSansMyanmar-Regular-ZawDecode.ttf",
+    name: "NotoSansMyanmar-Medium.otf",
+    src: "NotoSansMyanmar-Medium.otf",
 }
 
 prebuilt_font {
-    name: "NotoSansMyanmarUI-Bold-ZawDecode.ttf",
-    src: "NotoSansMyanmarUI-Bold-ZawDecode.ttf",
+    name: "NotoSansMyanmar-Regular.otf",
+    src: "NotoSansMyanmar-Regular.otf",
 }
 
 prebuilt_font {
-    name: "NotoSansMyanmarUI-Regular-ZawDecode.ttf",
-    src: "NotoSansMyanmarUI-Regular-ZawDecode.ttf",
+    name: "NotoSansMyanmarUI-Bold.otf",
+    src: "NotoSansMyanmarUI-Bold.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansMyanmarUI-Medium.otf",
+    src: "NotoSansMyanmarUI-Medium.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansMyanmarUI-Regular.otf",
+    src: "NotoSansMyanmarUI-Regular.otf",
 }
 
 prebuilt_font {
