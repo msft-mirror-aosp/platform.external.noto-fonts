@@ -64,6 +64,7 @@ PRODUCT_PACKAGES := \
     NotoSansGeorgian-VF.ttf \
     NotoSansGlagolitic-Regular.ttf \
     NotoSansGothic-Regular.ttf \
+    NotoSansGrantha-Regular.ttf \
     NotoSansGujarati-Bold.ttf \
     NotoSansGujarati-Regular.ttf \
     NotoSansGujaratiUI-Bold.ttf \
@@ -114,9 +115,11 @@ PRODUCT_PACKAGES := \
     NotoSansManichaean-Regular.otf \
     NotoSansMarchen-Regular.otf \
     NotoSansMasaramGondi-Regular.otf \
+    NotoSansMedefaidrin-VF.ttf \
     NotoSansMeeteiMayek-Regular.ttf \
     NotoSansMeroitic-Regular.otf \
     NotoSansMiao-Regular.otf \
+    NotoSansModi-Regular.ttf \
     NotoSansMongolian-Regular.ttf \
     NotoSansMro-Regular.otf \
     NotoSansMultani-Regular.otf \
@@ -162,6 +165,7 @@ PRODUCT_PACKAGES := \
     NotoSansSinhalaUI-Medium.otf \
     NotoSansSinhalaUI-Regular.otf \
     NotoSansSoraSompeng-Regular.otf \
+    NotoSansSoyombo-VF.ttf \
     NotoSansSundanese-Regular.ttf \
     NotoSansSylotiNagri-Regular.ttf \
     NotoSansSymbols-Regular-Subsetted.ttf \
@@ -174,6 +178,7 @@ PRODUCT_PACKAGES := \
     NotoSansTaiLe-Regular.ttf \
     NotoSansTaiTham-Regular.ttf \
     NotoSansTaiViet-Regular.ttf \
+    NotoSansTakri-VF.ttf \
     NotoSansTamil-Bold.otf \
     NotoSansTamil-Medium.otf \
     NotoSansTamil-Regular.otf \
@@ -190,8 +195,6 @@ PRODUCT_PACKAGES := \
     NotoSansThai-Regular.ttf \
     NotoSansThaiUI-Bold.ttf \
     NotoSansThaiUI-Regular.ttf \
-    NotoSansTibetan-Bold.ttf \
-    NotoSansTibetan-Regular.ttf \
     NotoSansTifinagh-Regular.otf \
     NotoSansUgaritic-Regular.ttf \
     NotoSansVai-Regular.ttf \
@@ -208,6 +211,7 @@ PRODUCT_PACKAGES := \
     NotoSerifCJK-Regular.ttc \
     NotoSerifDevanagari-Bold.ttf \
     NotoSerifDevanagari-Regular.ttf \
+    NotoSerifDogra-Regular.ttf \
     NotoSerifEthiopic-VF.ttf \
     NotoSerifGeorgian-VF.ttf \
     NotoSerifGujarati-Bold.ttf \
@@ -226,6 +230,7 @@ PRODUCT_PACKAGES := \
     NotoSerifMalayalam-Regular.ttf \
     NotoSerifMyanmar-Bold.otf \
     NotoSerifMyanmar-Regular.otf \
+    NotoSerifNyiakengPuachueHmong-VF.ttf \
     NotoSerifSinhala-Bold.otf \
     NotoSerifSinhala-Regular.otf \
     NotoSerifTamil-Bold.otf \
@@ -233,4 +238,6 @@ PRODUCT_PACKAGES := \
     NotoSerifTelugu-Bold.ttf \
     NotoSerifTelugu-Regular.ttf \
     NotoSerifThai-Bold.ttf \
-    NotoSerifThai-Regular.ttf
+    NotoSerifThai-Regular.ttf \
+    NotoSerifTibetan-VF.ttf \
+    NotoSerifYezidi-VF.ttf
