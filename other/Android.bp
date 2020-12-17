@@ -99,33 +99,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansBengali-Bold.otf",
-    src: "NotoSansBengali-Bold.otf",
+    name: "NotoSansBengali-VF.ttf",
+    src: "NotoSansBengali-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansBengali-Medium.otf",
-    src: "NotoSansBengali-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansBengali-Regular.otf",
-    src: "NotoSansBengali-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansBengaliUI-Bold.otf",
-    src: "NotoSansBengaliUI-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansBengaliUI-Medium.otf",
-    src: "NotoSansBengaliUI-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansBengaliUI-Regular.otf",
-    src: "NotoSansBengaliUI-Regular.otf",
+    name: "NotoSansBengaliUI-VF.ttf",
+    src: "NotoSansBengaliUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -199,33 +179,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansDevanagari-Bold.otf",
-    src: "NotoSansDevanagari-Bold.otf",
+    name: "NotoSansDevanagari-VF.ttf",
+    src: "NotoSansDevanagari-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansDevanagari-Medium.otf",
-    src: "NotoSansDevanagari-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansDevanagari-Regular.otf",
-    src: "NotoSansDevanagari-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansDevanagariUI-Bold.otf",
-    src: "NotoSansDevanagariUI-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansDevanagariUI-Medium.otf",
-    src: "NotoSansDevanagariUI-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansDevanagariUI-Regular.otf",
-    src: "NotoSansDevanagariUI-Regular.otf",
+    name: "NotoSansDevanagariUI-VF.ttf",
+    src: "NotoSansDevanagariUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -289,23 +249,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansGurmukhi-Bold.ttf",
-    src: "NotoSansGurmukhi-Bold.ttf",
+    name: "NotoSansGurmukhi-VF.ttf",
+    src: "NotoSansGurmukhi-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansGurmukhi-Regular.ttf",
-    src: "NotoSansGurmukhi-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansGurmukhiUI-Bold.ttf",
-    src: "NotoSansGurmukhiUI-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansGurmukhiUI-Regular.ttf",
-    src: "NotoSansGurmukhiUI-Regular.ttf",
+    name: "NotoSansGurmukhiUI-VF.ttf",
+    src: "NotoSansGurmukhiUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -359,23 +309,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansKannada-Bold.ttf",
-    src: "NotoSansKannada-Bold.ttf",
+    name: "NotoSansKannada-VF.ttf",
+    src: "NotoSansKannada-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansKannada-Regular.ttf",
-    src: "NotoSansKannada-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansKannadaUI-Bold.ttf",
-    src: "NotoSansKannadaUI-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansKannadaUI-Regular.ttf",
-    src: "NotoSansKannadaUI-Regular.ttf",
+    name: "NotoSansKannadaUI-VF.ttf",
+    src: "NotoSansKannadaUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -459,33 +399,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansMalayalam-Bold.otf",
-    src: "NotoSansMalayalam-Bold.otf",
+    name: "NotoSansMalayalam-VF.ttf",
+    src: "NotoSansMalayalam-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansMalayalam-Medium.otf",
-    src: "NotoSansMalayalam-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansMalayalam-Regular.otf",
-    src: "NotoSansMalayalam-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansMalayalamUI-Bold.otf",
-    src: "NotoSansMalayalamUI-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansMalayalamUI-Medium.otf",
-    src: "NotoSansMalayalamUI-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansMalayalamUI-Regular.otf",
-    src: "NotoSansMalayalamUI-Regular.otf",
+    name: "NotoSansMalayalamUI-VF.ttf",
+    src: "NotoSansMalayalamUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -724,33 +644,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansSinhala-Bold.otf",
-    src: "NotoSansSinhala-Bold.otf",
+    name: "NotoSansSinhala-VF.ttf",
+    src: "NotoSansSinhala-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansSinhala-Medium.otf",
-    src: "NotoSansSinhala-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansSinhala-Regular.otf",
-    src: "NotoSansSinhala-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansSinhalaUI-Bold.otf",
-    src: "NotoSansSinhalaUI-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansSinhalaUI-Medium.otf",
-    src: "NotoSansSinhalaUI-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansSinhalaUI-Regular.otf",
-    src: "NotoSansSinhalaUI-Regular.otf",
+    name: "NotoSansSinhalaUI-VF.ttf",
+    src: "NotoSansSinhalaUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -829,53 +729,23 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansTamil-Bold.otf",
-    src: "NotoSansTamil-Bold.otf",
+    name: "NotoSansTamil-VF.ttf",
+    src: "NotoSansTamil-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansTamil-Medium.otf",
-    src: "NotoSansTamil-Medium.otf",
+    name: "NotoSansTamilUI-VF.ttf",
+    src: "NotoSansTamilUI-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansTamil-Regular.otf",
-    src: "NotoSansTamil-Regular.otf",
+    name: "NotoSansTelugu-VF.ttf",
+    src: "NotoSansTelugu-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSansTamilUI-Bold.otf",
-    src: "NotoSansTamilUI-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansTamilUI-Medium.otf",
-    src: "NotoSansTamilUI-Medium.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansTamilUI-Regular.otf",
-    src: "NotoSansTamilUI-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansTelugu-Bold.ttf",
-    src: "NotoSansTelugu-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansTelugu-Regular.ttf",
-    src: "NotoSansTelugu-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansTeluguUI-Bold.ttf",
-    src: "NotoSansTeluguUI-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSansTeluguUI-Regular.ttf",
-    src: "NotoSansTeluguUI-Regular.ttf",
+    name: "NotoSansTeluguUI-VF.ttf",
+    src: "NotoSansTeluguUI-VF.ttf",
 }
 
 prebuilt_font {
@@ -944,23 +814,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifBengali-Bold.ttf",
-    src: "NotoSerifBengali-Bold.ttf",
+    name: "NotoSerifBengali-VF.ttf",
+    src: "NotoSerifBengali-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSerifBengali-Regular.ttf",
-    src: "NotoSerifBengali-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifDevanagari-Bold.ttf",
-    src: "NotoSerifDevanagari-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifDevanagari-Regular.ttf",
-    src: "NotoSerifDevanagari-Regular.ttf",
+    name: "NotoSerifDevanagari-VF.ttf",
+    src: "NotoSerifDevanagari-VF.ttf",
 }
 
 prebuilt_font {
@@ -979,23 +839,13 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifGujarati-Bold.ttf",
-    src: "NotoSerifGujarati-Bold.ttf",
+    name: "NotoSerifGujarati-VF.ttf",
+    src: "NotoSerifGujarati-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSerifGujarati-Regular.ttf",
-    src: "NotoSerifGujarati-Regular.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifGurmukhi-Bold.otf",
-    src: "NotoSerifGurmukhi-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifGurmukhi-Regular.otf",
-    src: "NotoSerifGurmukhi-Regular.otf",
+    name: "NotoSerifGurmukhi-VF.ttf",
+    src: "NotoSerifGurmukhi-VF.ttf",
 }
 
 prebuilt_font {
@@ -1009,13 +859,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifKannada-Bold.ttf",
-    src: "NotoSerifKannada-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifKannada-Regular.ttf",
-    src: "NotoSerifKannada-Regular.ttf",
+    name: "NotoSerifKannada-VF.ttf",
+    src: "NotoSerifKannada-VF.ttf",
 }
 
 prebuilt_font {
@@ -1039,13 +884,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifMalayalam-Bold.ttf",
-    src: "NotoSerifMalayalam-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifMalayalam-Regular.ttf",
-    src: "NotoSerifMalayalam-Regular.ttf",
+    name: "NotoSerifMalayalam-VF.ttf",
+    src: "NotoSerifMalayalam-VF.ttf",
 }
 
 prebuilt_font {
@@ -1064,33 +904,18 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifSinhala-Bold.otf",
-    src: "NotoSerifSinhala-Bold.otf",
+    name: "NotoSerifSinhala-VF.ttf",
+    src: "NotoSerifSinhala-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSerifSinhala-Regular.otf",
-    src: "NotoSerifSinhala-Regular.otf",
+    name: "NotoSerifTamil-VF.ttf",
+    src: "NotoSerifTamil-VF.ttf",
 }
 
 prebuilt_font {
-    name: "NotoSerifTamil-Bold.otf",
-    src: "NotoSerifTamil-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifTamil-Regular.otf",
-    src: "NotoSerifTamil-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifTelugu-Bold.ttf",
-    src: "NotoSerifTelugu-Bold.ttf",
-}
-
-prebuilt_font {
-    name: "NotoSerifTelugu-Regular.ttf",
-    src: "NotoSerifTelugu-Regular.ttf",
+    name: "NotoSerifTelugu-VF.ttf",
+    src: "NotoSerifTelugu-VF.ttf",
 }
 
 prebuilt_font {
