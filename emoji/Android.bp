@@ -16,3 +16,9 @@ prebuilt_font {
     name: "NotoColorEmoji.ttf",
     src: "NotoColorEmoji.ttf",
 }
+
+// To use in other build rules.
+filegroup {
+    name: "NotoColorEmojiTtf",
+    srcs: ["NotoColorEmoji.ttf"],
+}
