@@ -16,6 +16,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := noto-emoji-compat-java
+LOCAL_LICENSE_KINDS := SPDX-license-identifier-Apache-2.0 SPDX-license-identifier-MIT SPDX-license-identifier-OFL SPDX-license-identifier-Unicode-DFS
+LOCAL_LICENSE_CONDITIONS := by_exception_only notice
+LOCAL_NOTICE_FILE := $(LOCAL_PATH)/LICENSE_OFL $(LOCAL_PATH)/LICENSE_UNICODE
 LOCAL_SRC_FILES := $(call all-java-files-under, src/java)
 LOCAL_SDK_VERSION := current
 
