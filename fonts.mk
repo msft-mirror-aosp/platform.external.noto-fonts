@@ -19,92 +19,92 @@
 PRODUCT_PACKAGES := \
     NotoColorEmoji.ttf \
     NotoNaskhArabic-Bold.ttf \
-    NotoNaskhArabic-Regular.ttf \
+    NotoNaskhArabic.ttf \
     NotoNaskhArabicUI-Bold.ttf \
-    NotoNaskhArabicUI-Regular.ttf \
-    NotoSansAdlam-VF.ttf \
+    NotoNaskhArabicUI.ttf \
+    NotoSansAdlam-Regular.ttf \
     NotoSansAhom-Regular.otf \
     NotoSansAnatolianHieroglyphs-Regular.otf \
-    NotoSansArmenian-VF.ttf \
-    NotoSansAvestan-Regular.ttf \
-    NotoSansBalinese-Regular.ttf \
-    NotoSansBamum-Regular.ttf \
+    NotoSansArmenian-Regular.ttf \
+    NotoSansAvestan.ttf \
+    NotoSansBalinese.ttf \
+    NotoSansBamum.ttf \
     NotoSansBassaVah-Regular.otf \
-    NotoSansBatak-Regular.ttf \
-    NotoSansBengali-VF.ttf \
-    NotoSansBengaliUI-VF.ttf \
+    NotoSansBatak.ttf \
+    NotoSansBengali-Regular.ttf \
+    NotoSansBengaliUI-Regular.ttf \
     NotoSansBhaiksuki-Regular.otf \
-    NotoSansBrahmi-Regular.ttf \
-    NotoSansBuginese-Regular.ttf \
-    NotoSansBuhid-Regular.ttf \
-    NotoSansCanadianAboriginal-Regular.ttf \
-    NotoSansCarian-Regular.ttf \
+    NotoSansBrahmi.ttf \
+    NotoSansBuginese.ttf \
+    NotoSansBuhid.ttf \
+    NotoSansCanadianAboriginal.ttf \
+    NotoSansCarian.ttf \
     NotoSansChakma-Regular.otf \
     NotoSansCham-Bold.ttf \
-    NotoSansCham-Regular.ttf \
+    NotoSansCham.ttf \
     NotoSansCherokee-Regular.ttf \
-    NotoSansCJK-Regular.ttc \
-    NotoSansCoptic-Regular.ttf \
-    NotoSansCuneiform-Regular.ttf \
-    NotoSansCypriot-Regular.ttf \
-    NotoSansDeseret-Regular.ttf \
-    NotoSansDevanagari-VF.ttf \
-    NotoSansDevanagariUI-VF.ttf \
-    NotoSansEgyptianHieroglyphs-Regular.ttf \
+    NotoSansCJKjp-Regular.otc \
+    NotoSansCoptic.ttf \
+    NotoSansCuneiform.ttf \
+    NotoSansCypriot.ttf \
+    NotoSansDeseret.ttf \
+    NotoSansDevanagari-Regular.ttf \
+    NotoSansDevanagariUI-Regular.ttf \
+    NotoSansEgyptianHieroglyphs.ttf \
     NotoSansElbasan-Regular.otf \
-    NotoSansEthiopic-VF.ttf \
-    NotoSansGeorgian-VF.ttf \
-    NotoSansGlagolitic-Regular.ttf \
-    NotoSansGothic-Regular.ttf \
+    NotoSansEthiopic-Regular.ttf \
+    NotoSansGeorgian-Regular.ttf \
+    NotoSansGlagolitic.ttf \
+    NotoSansGothic.ttf \
     NotoSansGrantha-Regular.ttf \
     NotoSansGujarati-Bold.ttf \
-    NotoSansGujarati-Regular.ttf \
+    NotoSansGujarati.ttf \
     NotoSansGujaratiUI-Bold.ttf \
-    NotoSansGujaratiUI-Regular.ttf \
+    NotoSansGujaratiUI.ttf \
     NotoSansGunjalaGondi-Regular.otf \
-    NotoSansGurmukhi-VF.ttf \
-    NotoSansGurmukhiUI-VF.ttf \
+    NotoSansGurmukhi-Regular.ttf \
+    NotoSansGurmukhiUI-Regular.ttf \
     NotoSansHanifiRohingya-Regular.otf \
-    NotoSansHanunoo-Regular.ttf \
+    NotoSansHanunoo.ttf \
     NotoSansHatran-Regular.otf \
     NotoSansHebrew-Bold.ttf \
-    NotoSansHebrew-Regular.ttf \
-    NotoSansImperialAramaic-Regular.ttf \
-    NotoSansInscriptionalPahlavi-Regular.ttf \
-    NotoSansInscriptionalParthian-Regular.ttf \
+    NotoSansHebrew.ttf \
+    NotoSansImperialAramaic.ttf \
+    NotoSansInscriptionalPahlavi.ttf \
+    NotoSansInscriptionalParthian.ttf \
     NotoSansJavanese-Regular.otf \
-    NotoSansKaithi-Regular.ttf \
-    NotoSansKannada-VF.ttf \
-    NotoSansKannadaUI-VF.ttf \
-    NotoSansKayahLi-Regular.ttf \
-    NotoSansKharoshthi-Regular.ttf \
-    NotoSansKhmer-VF.ttf \
+    NotoSansKaithi.ttf \
+    NotoSansKannada-Regular.ttf \
+    NotoSansKannadaUI-Regular.ttf \
+    NotoSansKayahLi.ttf \
+    NotoSansKharoshthi.ttf \
+    NotoSansKhmer-Regular.ttf \
     NotoSansKhmerUI-Bold.ttf \
-    NotoSansKhmerUI-Regular.ttf \
+    NotoSansKhmerUI.ttf \
     NotoSansKhojki-Regular.otf \
     NotoSansLao-Bold.ttf \
-    NotoSansLao-Regular.ttf \
+    NotoSansLao.ttf \
     NotoSansLaoUI-Bold.ttf \
-    NotoSansLaoUI-Regular.ttf \
-    NotoSansLepcha-Regular.ttf \
-    NotoSansLimbu-Regular.ttf \
+    NotoSansLaoUI.ttf \
+    NotoSansLepcha.ttf \
+    NotoSansLimbu.ttf \
     NotoSansLinearA-Regular.otf \
-    NotoSansLinearB-Regular.ttf \
-    NotoSansLisu-Regular.ttf \
-    NotoSansLycian-Regular.ttf \
-    NotoSansLydian-Regular.ttf \
-    NotoSansMalayalam-VF.ttf \
-    NotoSansMalayalamUI-VF.ttf \
-    NotoSansMandaic-Regular.ttf \
+    NotoSansLinearB.ttf \
+    NotoSansLisu.ttf \
+    NotoSansLycian.ttf \
+    NotoSansLydian.ttf \
+    NotoSansMalayalam-Regular.ttf \
+    NotoSansMalayalamUI-Regular.ttf \
+    NotoSansMandaic.ttf \
     NotoSansManichaean-Regular.otf \
     NotoSansMarchen-Regular.otf \
     NotoSansMasaramGondi-Regular.otf \
-    NotoSansMedefaidrin-VF.ttf \
-    NotoSansMeeteiMayek-Regular.ttf \
+    NotoSansMedefaidrin-Regular.ttf \
+    NotoSansMeeteiMayek.ttf \
     NotoSansMeroitic-Regular.otf \
     NotoSansMiao-Regular.otf \
     NotoSansModi-Regular.ttf \
-    NotoSansMongolian-Regular.ttf \
+    NotoSansMongolian.ttf \
     NotoSansMro-Regular.otf \
     NotoSansMultani-Regular.otf \
     NotoSansMyanmar-Bold.otf \
@@ -115,94 +115,94 @@ PRODUCT_PACKAGES := \
     NotoSansMyanmarUI-Regular.otf \
     NotoSansNabataean-Regular.otf \
     NotoSansNewa-Regular.otf \
-    NotoSansNewTaiLue-Regular.ttf \
-    NotoSansNKo-Regular.ttf \
-    NotoSansOgham-Regular.ttf \
-    NotoSansOlChiki-Regular.ttf \
-    NotoSansOldItalic-Regular.ttf \
+    NotoSansNewTaiLue.ttf \
+    NotoSansNKo.ttf \
+    NotoSansOgham.ttf \
+    NotoSansOlChiki.ttf \
+    NotoSansOldItalic.ttf \
     NotoSansOldNorthArabian-Regular.otf \
     NotoSansOldPermic-Regular.otf \
-    NotoSansOldPersian-Regular.ttf \
-    NotoSansOldSouthArabian-Regular.ttf \
-    NotoSansOldTurkic-Regular.ttf \
+    NotoSansOldPersian.ttf \
+    NotoSansOldSouthArabian.ttf \
+    NotoSansOldTurkic.ttf \
     NotoSansOriya-Bold.ttf \
-    NotoSansOriya-Regular.ttf \
+    NotoSansOriya.ttf \
     NotoSansOriyaUI-Bold.ttf \
-    NotoSansOriyaUI-Regular.ttf \
+    NotoSansOriyaUI.ttf \
     NotoSansOsage-Regular.ttf \
-    NotoSansOsmanya-Regular.ttf \
+    NotoSansOsmanya.ttf \
     NotoSansPahawhHmong-Regular.otf \
     NotoSansPalmyrene-Regular.otf \
     NotoSansPauCinHau-Regular.otf \
-    NotoSansPhagsPa-Regular.ttf \
-    NotoSansPhoenician-Regular.ttf \
-    NotoSansRejang-Regular.ttf \
-    NotoSansRunic-Regular.ttf \
-    NotoSansSamaritan-Regular.ttf \
-    NotoSansSaurashtra-Regular.ttf \
+    NotoSansPhagsPa.ttf \
+    NotoSansPhoenician.ttf \
+    NotoSansRejang.ttf \
+    NotoSansRunic.ttf \
+    NotoSansSamaritan.ttf \
+    NotoSansSaurashtra.ttf \
     NotoSansSharada-Regular.otf \
-    NotoSansShavian-Regular.ttf \
-    NotoSansSinhala-VF.ttf \
-    NotoSansSinhalaUI-VF.ttf \
+    NotoSansShavian.ttf \
+    NotoSansSinhala-Regular.ttf \
+    NotoSansSinhalaUI-Regular.ttf \
     NotoSansSoraSompeng-Regular.otf \
-    NotoSansSoyombo-VF.ttf \
-    NotoSansSundanese-Regular.ttf \
-    NotoSansSylotiNagri-Regular.ttf \
+    NotoSansSoyombo-Regular.ttf \
+    NotoSansSundanese.ttf \
+    NotoSansSylotiNagri.ttf \
     NotoSansSymbols-Regular-Subsetted.ttf \
     NotoSansSymbols-Regular-Subsetted2.ttf \
-    NotoSansSyriacEastern-Regular.ttf \
-    NotoSansSyriacEstrangela-Regular.ttf \
-    NotoSansSyriacWestern-Regular.ttf \
-    NotoSansTagalog-Regular.ttf \
-    NotoSansTagbanwa-Regular.ttf \
-    NotoSansTaiLe-Regular.ttf \
-    NotoSansTaiTham-Regular.ttf \
-    NotoSansTaiViet-Regular.ttf \
-    NotoSansTakri-VF.ttf \
-    NotoSansTamil-VF.ttf \
-    NotoSansTamilUI-VF.ttf \
-    NotoSansTelugu-VF.ttf \
-    NotoSansTeluguUI-VF.ttf \
+    NotoSansSyriacEastern.ttf \
+    NotoSansSyriacEstrangela.ttf \
+    NotoSansSyriacWestern.ttf \
+    NotoSansTagalog.ttf \
+    NotoSansTagbanwa.ttf \
+    NotoSansTaiLe.ttf \
+    NotoSansTaiTham.ttf \
+    NotoSansTaiViet.ttf \
+    NotoSansTakri-Regular.ttf \
+    NotoSansTamil-Regular.ttf \
+    NotoSansTamilUI-Regular.ttf \
+    NotoSansTelugu-Regular.ttf \
+    NotoSansTeluguUI-Regular.ttf \
     NotoSansThaana-Bold.ttf \
-    NotoSansThaana-Regular.ttf \
+    NotoSansThaana.ttf \
     NotoSansThai-Bold.ttf \
-    NotoSansThai-Regular.ttf \
+    NotoSansThai.ttf \
     NotoSansThaiUI-Bold.ttf \
-    NotoSansThaiUI-Regular.ttf \
+    NotoSansThaiUI.ttf \
     NotoSansTifinagh-Regular.otf \
-    NotoSansUgaritic-Regular.ttf \
-    NotoSansVai-Regular.ttf \
+    NotoSansUgaritic.ttf \
+    NotoSansVai.ttf \
     NotoSansWancho-Regular.otf \
     NotoSansWarangCiti-Regular.otf \
-    NotoSansYi-Regular.ttf \
+    NotoSansYi.ttf \
     NotoSerif-Bold.ttf \
     NotoSerif-BoldItalic.ttf \
     NotoSerif-Italic.ttf \
-    NotoSerif-Regular.ttf \
-    NotoSerifArmenian-VF.ttf \
-    NotoSerifBengali-VF.ttf \
-    NotoSerifCJK-Regular.ttc \
-    NotoSerifDevanagari-VF.ttf \
+    NotoSerif.ttf \
+    NotoSerifArmenian-Regular.ttf \
+    NotoSerifBengali-Regular.ttf \
+    NotoSerifCJKjp-Regular.otc \
+    NotoSerifDevanagari-Regular.ttf \
     NotoSerifDogra-Regular.ttf \
-    NotoSerifEthiopic-VF.ttf \
-    NotoSerifGeorgian-VF.ttf \
-    NotoSerifGujarati-VF.ttf \
-    NotoSerifGurmukhi-VF.ttf \
+    NotoSerifEthiopic-Regular.ttf \
+    NotoSerifGeorgian-Regular.ttf \
+    NotoSerifGujarati-Regular.ttf \
+    NotoSerifGurmukhi-Regular.ttf \
     NotoSerifHebrew-Bold.ttf \
     NotoSerifHebrew-Regular.ttf \
-    NotoSerifKannada-VF.ttf \
+    NotoSerifKannada-Regular.ttf \
     NotoSerifKhmer-Bold.otf \
     NotoSerifKhmer-Regular.otf \
     NotoSerifLao-Bold.ttf \
-    NotoSerifLao-Regular.ttf \
-    NotoSerifMalayalam-VF.ttf \
+    NotoSerifLao.ttf \
+    NotoSerifMalayalam-Regular.ttf \
     NotoSerifMyanmar-Bold.otf \
     NotoSerifMyanmar-Regular.otf \
-    NotoSerifNyiakengPuachueHmong-VF.ttf \
-    NotoSerifSinhala-VF.ttf \
-    NotoSerifTamil-VF.ttf \
-    NotoSerifTelugu-VF.ttf \
+    NotoSerifHmongNyiakeng-Regular.ttf \
+    NotoSerifSinhala-Regular.ttf \
+    NotoSerifTamil-Regular.ttf \
+    NotoSerifTelugu-Regular.ttf \
     NotoSerifThai-Bold.ttf \
-    NotoSerifThai-Regular.ttf \
-    NotoSerifTibetan-VF.ttf \
-    NotoSerifYezidi-VF.ttf
+    NotoSerifThai.ttf \
+    NotoSerifTibetan-Regular.ttf \
+    NotoSerifYezidi-Regular.ttf
