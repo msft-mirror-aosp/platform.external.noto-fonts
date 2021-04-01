@@ -47,11 +47,11 @@ license {
 }
 
 prebuilt_font {
-    name: "NotoSansCJKjp-Regular.otc",
-    src: "NotoSansCJKjp-Regular.otc",
+    name: "NotoSansCJK-Regular.ttc",
+    src: "NotoSansCJK-Regular.ttc",
 }
 
 prebuilt_font {
-    name: "NotoSerifCJKjp-Regular.otc",
-    src: "NotoSerifCJKjp-Regular.otc",
+    name: "NotoSerifCJK-Regular.ttc",
+    src: "NotoSerifCJK-Regular.ttc",
 }

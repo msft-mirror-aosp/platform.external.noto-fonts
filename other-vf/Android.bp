@@ -46,6 +46,6 @@ license {
 }
 
 prebuilt_font {
-    name: "NotoSansKhmer-Regular.ttf",
-    src: "NotoSansKhmer-Regular.ttf",
+    name: "NotoSansKhmer-VF.ttf",
+    src: "NotoSansKhmer-VF.ttf",
 }
