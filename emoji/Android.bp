@@ -48,6 +48,9 @@ license {
 prebuilt_font {
     name: "NotoColorEmoji.ttf",
     src: "NotoColorEmoji.ttf",
+    dist: {
+        targets: ["droidcore"],
+    },
 }
 
 // To use in other build rules.
