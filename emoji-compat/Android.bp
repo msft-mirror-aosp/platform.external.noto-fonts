@@ -37,24 +37,27 @@ license {
     name: "external_noto-fonts_emoji_license",
     visibility: [":__subpackages__"],
     license_kinds: [
-        "SPDX-license-identifier-MIT",
+        "SPDX-license-identifier-Unicode-DFS",
         "SPDX-license-identifier-OFL", // by exception only
     ],
     license_text: [
-        "NOTICE",
+        "LICENSE_OFL",
+        "LICENSE_UNICODE",
     ],
 }
 
 prebuilt_font {
     name: "NotoColorEmoji.ttf",
-    src: "NotoColorEmoji.ttf",
+    src: "font/NotoColorEmojiCompat.ttf",
     dist: {
         targets: ["droidcore"],
     },
 }
 
 // To use in other build rules.
-filegroup {
+genrule {
     name: "NotoColorEmojiTtf",
-    srcs: ["NotoColorEmoji.ttf"],
+    srcs: ["font/NotoColorEmojiCompat.ttf"],
+    out: ["NotoColorEmoji.ttf"],
+    cmd: "cp $(in) $(out)",
 }
