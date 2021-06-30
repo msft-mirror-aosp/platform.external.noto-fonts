@@ -49,11 +49,14 @@ import hashlib
 import itertools
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
 from fontTools import ttLib
+from fontTools.ttLib.tables import otTables
+from nototools import font_data
 
 ########### UPDATE OR CHECK WHEN A NEW FONT IS BEING GENERATED ###########
 # Last Android SDK Version
@@ -119,6 +122,12 @@ STD_VARIANTS_EMOJI_STYLE = 'EMOJI STYLE'
 
 DEFAULT_EMOJI_ID = 0xF0001
 EMOJI_STYLE_VS = 0xFE0F
+
+# The reference code point to be used for filling metrics of wartermark glyph
+WATERMARK_REF_CODE_POINT = 0x1F600
+# The code point and glyph name used for watermark.
+WATERMARK_NEW_CODE_POINT = 0x10FF00
+WATERMARK_NEW_GLYPH_ID = 'u10FF00'
 
 def to_hex_str(value):
     """Converts given int value to hex without the 0x prefix"""
@@ -614,6 +623,46 @@ class EmojiFontCreator(object):
             for emoji_data in emoji_data_list:
                 csvwriter.writerow(emoji_data.create_txt_row())
 
+    def add_watermark(self, ttf):
+        cmap = ttf.getBestCmap()
+        gsub = ttf['GSUB'].table
+
+        # Obtain Version string
+        m = re.search('^Version (\d*)\.(\d*)', font_data.font_version(ttf))
+        if not m:
+            raise ValueError('The font does not have proper version string.')
+        major = m.group(1)
+        minor = m.group(2)
+        # Replace the dot with space since NotoColorEmoji does not have glyph for dot.
+        glyphs = [cmap[ord(x)] for x in '%s %s' % (major, minor)]
+
+        # Update Glyph metrics
+        ttf.getGlyphOrder().append(WATERMARK_NEW_GLYPH_ID)
+        refGlyphId = cmap[WATERMARK_REF_CODE_POINT]
+        ttf['hmtx'].metrics[WATERMARK_NEW_GLYPH_ID] = ttf['hmtx'].metrics[refGlyphId]
+        ttf['vmtx'].metrics[WATERMARK_NEW_GLYPH_ID] = ttf['vmtx'].metrics[refGlyphId]
+
+        # Add new Glyph to cmap
+        font_data.add_to_cmap(ttf, { WATERMARK_NEW_CODE_POINT : WATERMARK_NEW_GLYPH_ID })
+
+        # Add lookup table for the version string.
+        lookups = gsub.LookupList.Lookup
+        new_lookup = otTables.Lookup()
+        new_lookup.LookupType = 2  # Multiple Substitution Subtable.
+        new_lookup.LookupFlag = 0
+        new_subtable = otTables.MultipleSubst()
+        new_subtable.mapping = { WATERMARK_NEW_GLYPH_ID : tuple(glyphs) }
+        new_lookup.SubTable = [ new_subtable ]
+        new_lookup_index = len(lookups)
+        lookups.append(new_lookup)
+
+        # Add feature
+        feature = next(x for x in gsub.FeatureList.FeatureRecord if x.FeatureTag == 'ccmp')
+        if not feature:
+            raise ValueError("Font doesn't contain ccmp feature.")
+
+        feature.Feature.LookupListIndex.append(new_lookup_index)
+
     def create_font(self):
         """Creates the EmojiCompat font.
         :param font_path: path to Android NotoColorEmoji font
@@ -670,6 +719,9 @@ class EmojiFontCreator(object):
 
             # inject metadata binary into font
             inject_meta_into_font(ttf, flatbuffer_bin_file)
+
+            # add wartermark glyph for manual verification.
+            self.add_watermark(ttf)
 
             # update CBDT and CBLC versions since older android versions cannot read > 2.0
             ttf['CBDT'].version = 2.0
