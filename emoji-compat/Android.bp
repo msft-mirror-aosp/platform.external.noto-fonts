@@ -54,6 +54,11 @@ prebuilt_font {
     },
 }
 
+prebuilt_font {
+    name: "NotoColorEmojiFlags.ttf",
+    src: "font/NotoColorEmojiFlags.ttf",
+}
+
 // To use in other build rules.
 genrule {
     name: "NotoColorEmojiTtf",
