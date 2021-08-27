@@ -60,8 +60,10 @@ prebuilt_font {
 }
 
 // To use in other build rules.
+// Renamed instead of removed to avoid merge conflicts.
+// TODO: remove this.
 genrule {
-    name: "NotoColorEmojiTtf",
+    name: "Unused_NotoColorEmojiTtf",
     srcs: ["font/NotoColorEmojiCompat.ttf"],
     out: ["NotoColorEmoji.ttf"],
     cmd: "cp $(in) $(out)",
