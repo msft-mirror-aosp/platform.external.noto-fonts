@@ -124,7 +124,7 @@ DEFAULT_EMOJI_ID = 0xF0001
 EMOJI_STYLE_VS = 0xFE0F
 
 # The reference code point to be used for filling metrics of wartermark glyph
-WATERMARK_REF_CODE_POINT = 0x1F1E6
+WATERMARK_REF_CODE_POINT = 0x1F600
 # The code point and glyph name used for watermark.
 WATERMARK_NEW_CODE_POINT = 0x10FF00
 WATERMARK_NEW_GLYPH_ID = 'u10FF00'
