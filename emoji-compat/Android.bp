@@ -68,3 +68,33 @@ genrule {
     out: ["NotoColorEmoji.ttf"],
     cmd: "cp $(in) $(out)",
 }
+
+android_test {
+  name: "EmojiCompatTest",
+
+  srcs: [
+    "tests/src/**/*.kt",
+    "tests/src/**/*.java"
+  ],
+
+  libs: [
+    "android.test.runner",
+    "android.test.base"
+  ],
+
+  static_libs: [
+    "androidx.test.ext.junit",
+    "androidx.test.runner",
+    "androidx.test.rules",
+    "androidx.emoji_emoji",
+    "mockito-target",
+    "truth-prebuilt",
+  ],
+
+  test_suites: ["general-tests"],
+
+  asset_dirs: ["font", "supported-emojis"],
+
+  manifest: "tests/AndroidManifest.xml",
+  test_config: "tests/AndroidTest.xml",
+}
