@@ -59,16 +59,6 @@ prebuilt_font {
     src: "font/NotoColorEmojiFlags.ttf",
 }
 
-// To use in other build rules.
-// Renamed instead of removed to avoid merge conflicts.
-// TODO: remove this.
-genrule {
-    name: "Unused_NotoColorEmojiTtf",
-    srcs: ["font/NotoColorEmojiCompat.ttf"],
-    out: ["NotoColorEmoji.ttf"],
-    cmd: "cp $(in) $(out)",
-}
-
 android_test {
   name: "EmojiCompatTest",
 
