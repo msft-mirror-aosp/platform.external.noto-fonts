@@ -18,6 +18,7 @@
 
 PRODUCT_PACKAGES := \
     NotoColorEmoji.ttf \
+    NotoColorEmojiLegacy.ttf \
     NotoColorEmojiFlags.ttf \
     NotoNaskhArabic-Bold.ttf \
     NotoNaskhArabic-Regular.ttf \
