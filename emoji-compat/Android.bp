@@ -59,6 +59,11 @@ prebuilt_font {
     src: "font/NotoColorEmojiFlags.ttf",
 }
 
+prebuilt_font {
+    name: "NotoColorEmojiLegacy.ttf",
+    src: "font/NotoColorEmojiCompatLegacy.ttf",
+}
+
 android_test {
   name: "EmojiCompatTest",
 
