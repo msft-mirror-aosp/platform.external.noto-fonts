@@ -54,10 +54,42 @@ prebuilt_font {
     },
 }
 
-// To use in other build rules.
-genrule {
-    name: "NotoColorEmojiTtf",
-    srcs: ["font/NotoColorEmojiCompat.ttf"],
-    out: ["NotoColorEmoji.ttf"],
-    cmd: "cp $(in) $(out)",
+prebuilt_font {
+    name: "NotoColorEmojiFlags.ttf",
+    src: "font/NotoColorEmojiFlags.ttf",
+}
+
+prebuilt_font {
+    name: "NotoColorEmojiLegacy.ttf",
+    src: "font/NotoColorEmojiCompatLegacy.ttf",
+}
+
+android_test {
+  name: "EmojiCompatTest",
+
+  srcs: [
+    "tests/src/**/*.kt",
+    "tests/src/**/*.java"
+  ],
+
+  libs: [
+    "android.test.runner",
+    "android.test.base"
+  ],
+
+  static_libs: [
+    "androidx.test.ext.junit",
+    "androidx.test.runner",
+    "androidx.test.rules",
+    "androidx.emoji_emoji",
+    "mockito-target",
+    "truth-prebuilt",
+  ],
+
+  test_suites: ["general-tests"],
+
+  asset_dirs: ["font", "supported-emojis"],
+
+  manifest: "tests/AndroidManifest.xml",
+  test_config: "tests/AndroidTest.xml",
 }
