@@ -28,7 +28,7 @@ filegroup {
     export_to_make_var: "recovery_noto-fonts_dep",
     srcs: [
         "cjk/*.ttc",
-        "other/*.otf",
-        "other/*.ttf",
+        "other/data/*.otf",
+        "other/data/*.ttf",
     ],
 }
