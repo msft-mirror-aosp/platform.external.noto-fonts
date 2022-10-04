@@ -49,19 +49,22 @@ import hashlib
 import itertools
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
 from fontTools import ttLib
+from fontTools.ttLib.tables import otTables
+from nototools import font_data
 
 ########### UPDATE OR CHECK WHEN A NEW FONT IS BEING GENERATED ###########
 # Last Android SDK Version
-SDK_VERSION = 30
+SDK_VERSION = 31
 # metadata version that will be embedded into font. If there are updates to the font that would
 # cause data/emoji_metadata.txt to change, this integer number should be incremented. This number
 # defines in which EmojiCompat metadata version the emoji is added to the font.
-METADATA_VERSION = 7
+METADATA_VERSION = 8
 
 ####### main directories where output files are created #######
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -120,6 +123,12 @@ STD_VARIANTS_EMOJI_STYLE = 'EMOJI STYLE'
 DEFAULT_EMOJI_ID = 0xF0001
 EMOJI_STYLE_VS = 0xFE0F
 
+# The reference code point to be used for filling metrics of wartermark glyph
+WATERMARK_REF_CODE_POINT = 0x1F600
+# The code point and glyph name used for watermark.
+WATERMARK_NEW_CODE_POINT = 0x10FF00
+WATERMARK_NEW_GLYPH_ID = 'u10FF00'
+
 def to_hex_str(value):
     """Converts given int value to hex without the 0x prefix"""
     return format(value, 'X')
@@ -140,6 +149,12 @@ def prepend_header_to_file(file_path, header_path):
             original_content = original_file.read()
             original_file.seek(0)
             original_file.write(copyright_file.read() + "\n" + original_content)
+
+def is_ri(codepoint):
+  return 0x1F1E6 <= codepoint and codepoint <= 0x1F1FF
+
+def is_flag_seq(codepoints):
+  return all(is_ri(x) for x in codepoints)
 
 
 def update_flatbuffer_java_files(flatbuffer_java_dir, header_dir, target_dir):
@@ -338,7 +353,7 @@ def read_emoji_intervals(emoji_data_map, file_path, emoji_style_exceptions):
                 emoji_data_map[key] = emoji_data
 
 
-def read_emoji_sequences(emoji_data_map, file_path, optional=False):
+def read_emoji_sequences(emoji_data_map, file_path, optional=False, filter=None):
     """Reads the content of the file which contains emoji sequences. Creates EmojiData for each
     line and puts into emoji_data_map."""
     lines = read_emoji_lines(file_path, optional)
@@ -351,22 +366,29 @@ def read_emoji_sequences(emoji_data_map, file_path, optional=False):
             continue
         codepoints = [hex_str_to_int(x) for x in line.split(';')[0].strip().split(' ')]
         codepoints = [x for x in codepoints if x != EMOJI_STYLE_VS]
+        if filter:
+          if filter(codepoints):
+            continue
         key = codepoint_to_string(codepoints)
         if not key in emoji_data_map:
             emoji_data = _EmojiData(codepoints, False)
             emoji_data_map[key] = emoji_data
 
 
-def load_emoji_data_map(unicode_path):
+def load_emoji_data_map(unicode_path, without_flags):
     """Reads the emoji data files, constructs a map of space separated codepoints to EmojiData.
     :return: map of space separated codepoints to EmojiData
     """
+    if without_flags:
+      filter = lambda x: is_flag_seq(x)
+    else:
+      filter = None
     emoji_data_map = {}
     emoji_style_exceptions = get_emoji_style_exceptions(unicode_path)
     read_emoji_intervals(emoji_data_map, os.path.join(unicode_path, EMOJI_DATA_FILE),
                          emoji_style_exceptions)
     read_emoji_sequences(emoji_data_map, os.path.join(unicode_path, EMOJI_ZWJ_FILE))
-    read_emoji_sequences(emoji_data_map, os.path.join(unicode_path, EMOJI_SEQ_FILE))
+    read_emoji_sequences(emoji_data_map, os.path.join(unicode_path, EMOJI_SEQ_FILE), filter=filter)
 
     # Add the optional ANDROID_EMOJI_ZWJ_SEQ_FILE if it exists.
     read_emoji_sequences(emoji_data_map, os.path.join(unicode_path, ANDROID_EMOJI_ZWJ_SEQ_FILE),
@@ -472,11 +494,12 @@ def create_sha_from_source_files(font_paths):
 class EmojiFontCreator(object):
     """Creates the EmojiCompat font"""
 
-    def __init__(self, font_path, unicode_path):
+    def __init__(self, font_path, unicode_path, without_flags):
         validate_input_files(font_path, unicode_path, FLATBUFFER_MODULE_DIR)
 
         self.font_path = font_path
         self.unicode_path = unicode_path
+        self.without_flags = without_flags
         self.emoji_data_map = {}
         self.remapped_codepoints = {}
         self.glyph_to_image_metrics_map = {}
@@ -594,6 +617,8 @@ class EmojiFontCreator(object):
 
         total_emoji_count = 0
         for emoji_data in emoji_data_list:
+            if self.without_flags and is_flag_seq(emoji_data.codepoints):
+                continue  # Do not add flags emoji data if this is for subset font.
             element = emoji_data.create_json_element()
             output_json['list'].append(element)
             total_emoji_count = total_emoji_count + 1
@@ -614,6 +639,46 @@ class EmojiFontCreator(object):
             for emoji_data in emoji_data_list:
                 csvwriter.writerow(emoji_data.create_txt_row())
 
+    def add_watermark(self, ttf):
+        cmap = ttf.getBestCmap()
+        gsub = ttf['GSUB'].table
+
+        # Obtain Version string
+        m = re.search('^Version (\d*)\.(\d*)', font_data.font_version(ttf))
+        if not m:
+            raise ValueError('The font does not have proper version string.')
+        major = m.group(1)
+        minor = m.group(2)
+        # Replace the dot with space since NotoColorEmoji does not have glyph for dot.
+        glyphs = [cmap[ord(x)] for x in '%s %s' % (major, minor)]
+
+        # Update Glyph metrics
+        ttf.getGlyphOrder().append(WATERMARK_NEW_GLYPH_ID)
+        refGlyphId = cmap[WATERMARK_REF_CODE_POINT]
+        ttf['hmtx'].metrics[WATERMARK_NEW_GLYPH_ID] = ttf['hmtx'].metrics[refGlyphId]
+        ttf['vmtx'].metrics[WATERMARK_NEW_GLYPH_ID] = ttf['vmtx'].metrics[refGlyphId]
+
+        # Add new Glyph to cmap
+        font_data.add_to_cmap(ttf, { WATERMARK_NEW_CODE_POINT : WATERMARK_NEW_GLYPH_ID })
+
+        # Add lookup table for the version string.
+        lookups = gsub.LookupList.Lookup
+        new_lookup = otTables.Lookup()
+        new_lookup.LookupType = 2  # Multiple Substitution Subtable.
+        new_lookup.LookupFlag = 0
+        new_subtable = otTables.MultipleSubst()
+        new_subtable.mapping = { WATERMARK_NEW_GLYPH_ID : tuple(glyphs) }
+        new_lookup.SubTable = [ new_subtable ]
+        new_lookup_index = len(lookups)
+        lookups.append(new_lookup)
+
+        # Add feature
+        feature = next(x for x in gsub.FeatureList.FeatureRecord if x.FeatureTag == 'ccmp')
+        if not feature:
+            raise ValueError("Font doesn't contain ccmp feature.")
+
+        feature.Feature.LookupListIndex.append(new_lookup_index)
+
     def create_font(self):
         """Creates the EmojiCompat font.
         :param font_path: path to Android NotoColorEmoji font
@@ -623,7 +688,7 @@ class EmojiFontCreator(object):
         tmp_dir = tempfile.mkdtemp()
 
         # create emoji codepoints to EmojiData map
-        self.emoji_data_map = load_emoji_data_map(self.unicode_path)
+        self.emoji_data_map = load_emoji_data_map(self.unicode_path, self.without_flags)
 
         # read previous metadata file to update id, sdkAdded and compatAdded. emoji id that is
         # returned is either default or 1 greater than the largest id in previous data
@@ -671,6 +736,9 @@ class EmojiFontCreator(object):
             # inject metadata binary into font
             inject_meta_into_font(ttf, flatbuffer_bin_file)
 
+            # add wartermark glyph for manual verification.
+            self.add_watermark(ttf)
+
             # update CBDT and CBLC versions since older android versions cannot read > 2.0
             ttf['CBDT'].version = 2.0
             ttf['CBLC'].version = 2.0
@@ -698,14 +766,19 @@ def print_usage():
 
 def parse_args(argv):
     # parse manually to avoid any extra dependencies
+    if len(argv) == 4:
+      without_flags = argv[3] == '--without-flags'
+    else:
+      without_flags = False
+
     if len(argv) < 3:
         print_usage()
         sys.exit(1)
-    return (sys.argv[1], sys.argv[2])
+    return (sys.argv[1], sys.argv[2], without_flags)
 
 def main():
-    font_file, unicode_dir = parse_args(sys.argv)
-    EmojiFontCreator(font_file, unicode_dir).create_font()
+    font_file, unicode_dir, without_flags = parse_args(sys.argv)
+    EmojiFontCreator(font_file, unicode_dir, without_flags).create_font()
 
 
 if __name__ == '__main__':
