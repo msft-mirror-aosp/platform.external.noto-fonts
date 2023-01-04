@@ -5,17 +5,16 @@ License: Unicode
 License File: LICENSE_UNICODE
 
 Description:
-Noto Color Emoji Compat font is generated using Noto Color Emoji font using 
-<a href="https://github.com/googlefonts/emojicompat">github.com/googlefonts/emojicompat</a>
+Noto Color Emoji Compat font is generated using Noto Color Emoji font using createfont.py. The
+compat font is under font/ directory.
 
-Canonical source of truth for fonts is
+While generating the compat font, Noto Color Emoji font and data files from Unicode are used.
 
-* <a href="http://github.com/googlefonts/noto-emoji">github.com/googlefonts/noto-emoji</a>
+data/emoji-metadata.txt is updated using the Noto Color Emoji font and data files from
+Unicode.
 
-However, we do not pull down that entire project as it would increase repo size.
+supported-emojis/emojis.txt file contains list of emojis that are supported by the font. Main
+purpose is testing. It is generated using the Unicode files.
 
-To pull in a new font please update
-
-* font/NotoColorEmoji.txt
-* data/emoji-metadata.txt
-* supported-emojis.emojis.txt
+Noto Color Emoji font is under the <android_source>/external/noto-fonts/emoji/ directory. Unicode
+files are under the <android_source>/external/unicode/ directory.
