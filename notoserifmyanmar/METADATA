@@ -1,6 +1,3 @@
-# *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
-#     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
-#     DEPENDING ON IT IN YOUR PROJECT. ***
 name: "notoserifmyanmar"
 description:
     "Noto is a global font collection for writing in all modern and ancientlanguages. Noto Serif Myanmar is a modulated (“serif”) design for texts in theSoutheast Asian Myanmar script. It has 725 glyphs."
@@ -11,7 +8,6 @@ third_party {
     value: "https://github.com/google/fonts/tree/main/ofl/notoserifmyanmar"
   }
   version: "2.001"
-  license_note: "contains OFL fonts"
-  license_type: BY_EXCEPTION_ONLY
+  license_type: NOTICE
   last_upgrade_date { year: 2018 month: 5 day: 4 }
 }
