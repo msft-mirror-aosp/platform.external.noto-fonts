@@ -65,31 +65,34 @@ prebuilt_font {
 }
 
 android_test {
-  name: "EmojiCompatTest",
+    name: "EmojiCompatTest",
 
-  srcs: [
-    "tests/src/**/*.kt",
-    "tests/src/**/*.java"
-  ],
+    srcs: [
+        "tests/src/**/*.kt",
+        "tests/src/**/*.java",
+    ],
 
-  libs: [
-    "android.test.runner",
-    "android.test.base"
-  ],
+    libs: [
+        "android.test.runner",
+        "android.test.base",
+    ],
 
-  static_libs: [
-    "androidx.test.ext.junit",
-    "androidx.test.runner",
-    "androidx.test.rules",
-    "androidx.emoji_emoji",
-    "mockito-target",
-    "truth-prebuilt",
-  ],
+    static_libs: [
+        "androidx.test.ext.junit",
+        "androidx.test.runner",
+        "androidx.test.rules",
+        "androidx.emoji_emoji",
+        "mockito-target",
+        "truth",
+    ],
 
-  test_suites: ["general-tests"],
+    test_suites: ["general-tests"],
 
-  asset_dirs: ["font", "supported-emojis"],
+    asset_dirs: [
+        "font",
+        "supported-emojis",
+    ],
 
-  manifest: "tests/AndroidManifest.xml",
-  test_config: "tests/AndroidTest.xml",
+    manifest: "tests/AndroidManifest.xml",
+    test_config: "tests/AndroidTest.xml",
 }
