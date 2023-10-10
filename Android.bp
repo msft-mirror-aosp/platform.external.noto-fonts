@@ -16,6 +16,10 @@
 // *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
 //     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
 //     DEPENDING ON IT IN YOUR PROJECT. ***
+
+// *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
+//     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
+//     DEPENDING ON IT IN YOUR PROJECT. ***
 package {
     default_applicable_licenses: ["external_noto-fonts_license"],
 }
