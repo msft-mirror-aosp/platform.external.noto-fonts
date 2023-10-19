@@ -16,7 +16,7 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
-ifeq ($(RELEASE_REMOVE_LEGACY_EMOJI_FONT),false)
+ifneq ($(RELEASE_REMOVE_LEGACY_EMOJI_FONT),true)
 # The legacy emoji font is always excluded from the wear OS.
 ifneq ($(CLOCKWORK_PRODUCT),true)
 	PRODUCT_PACKAGES := NotoColorEmojiLegacy.ttf
