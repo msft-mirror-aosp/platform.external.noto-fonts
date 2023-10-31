@@ -7,7 +7,7 @@ third_party {
     type: ARCHIVE
     value: "https://github.com/notofonts/noto-cjk/tree/main/Serif/OTC"
   }
-  version: "1.001"
+  version: "2.002"
   license_type: NOTICE
-  last_upgrade_date { year: 2022 month: 8 day: 15 }
+  last_upgrade_date { year: 2023 month: 10 day: 27 }
 }
