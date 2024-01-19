@@ -24,6 +24,10 @@ endif
 endif
 
 
+# Set RELEASE_PACKAGE_VARIABLE_NOTO_SANS_CJK to noto_sans_cjk_config.use_var_font in Android.bp
+$(call soong_config_set,noto_sans_cjk_config,use_var_font,$(RELEASE_PACKAGE_VARIABLE_NOTO_SANS_CJK))
+
+
 PRODUCT_PACKAGES := \
     $(PRODUCT_PACKAGES) \
     NotoColorEmoji.ttf \
