@@ -1,7 +1,7 @@
+set noparent
+
 # Android owners
-nona@google.com
-siyamed@google.com
-seanmcq@google.com
+file:platform/frameworks/base:/core/java/android/text/OWNERS
 
 # Upstream font owners
 marekj@google.com

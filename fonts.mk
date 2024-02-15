@@ -16,9 +16,21 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
+ifneq ($(RELEASE_REMOVE_LEGACY_EMOJI_FONT),true)
+# The legacy emoji font is always excluded from the wear OS.
 ifneq ($(CLOCKWORK_PRODUCT),true)
 	PRODUCT_PACKAGES := NotoColorEmojiLegacy.ttf
 endif
+endif
+
+
+# Set RELEASE_PACKAGE_VARIABLE_NOTO_SANS_CJK to noto_sans_cjk_config.use_var_font in Android.bp
+$(call soong_config_set,noto_sans_cjk_config,use_var_font,$(RELEASE_PACKAGE_VARIABLE_NOTO_SANS_CJK))
+
+ifeq ($(RELEASE_PACKAGE_HENTAIGANA_FONT), true)
+	PRODUCT_PACKAGES := NotoSerifHentaigana-EL.ttf
+endif
+
 
 PRODUCT_PACKAGES := \
     $(PRODUCT_PACKAGES) \
