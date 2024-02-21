@@ -46,22 +46,53 @@ license {
     ],
 }
 
-prebuilt_font {
+soong_config_module_type {
+    name: "prebuilt_emoji_font",
+    module_type: "prebuilt_font",
+    config_namespace: "emoji_font",
+    value_variables: ["emoji_font_version"],
+    properties: ["src"],
+}
+
+prebuilt_emoji_font {
     name: "NotoColorEmoji.ttf",
-    src: "font/NotoColorEmojiCompat.ttf",
     dist: {
         targets: ["droidcore"],
+    },
+    // Need a default value because SDK build doesn't include fonts.mk.
+    src: "font/2.042/Noto-COLRv1-noflags.ttf",
+    soong_config_variables: {
+        emoji_font_version: {
+            src: "font/%s/Noto-COLRv1-noflags.ttf",
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "prebuilt_flag_emoji_font",
+    module_type: "prebuilt_font",
+    config_namespace: "flag_emoji_font",
+    value_variables: ["flag_emoji_font_version"],
+    properties: ["src"],
+}
+
+prebuilt_flag_emoji_font {
+    name: "NotoColorEmojiFlags.ttf",
+    dist: {
+        targets: ["droidcore"],
+    },
+    // Need a default value because SDK build doesn't include fonts.mk.
+    src: "font/2.042/NotoColorEmoji-flagsonly.ttf",
+    soong_config_variables: {
+        flag_emoji_font_version: {
+            src: "font/%s/NotoColorEmoji-flagsonly.ttf",
+        },
     },
 }
 
 prebuilt_font {
-    name: "NotoColorEmojiFlags.ttf",
-    src: "font/NotoColorEmojiFlags.ttf",
-}
-
-prebuilt_font {
     name: "NotoColorEmojiLegacy.ttf",
-    src: "font/NotoColorEmojiCompatLegacy.ttf",
+    src: "font/2.042/NotoColorEmoji-noflags.ttf",
     dist: {
         targets: ["droidcore"],
     },
