@@ -32,7 +32,7 @@ $(call soong_config_set,emoji_font,emoji_font_version,$(RELEASE_PACKAGE_EMOJI_FO
 $(call soong_config_set,flag_emoji_font,flag_emoji_font_version,$(RELEASE_PACKAGE_FLAG_EMOJI_FONT_VERSION))
 
 ifeq ($(RELEASE_PACKAGE_HENTAIGANA_FONT), true)
-	PRODUCT_PACKAGES := NotoSerifHentaigana-EL.ttf
+	PRODUCT_PACKAGES := NotoSerifHentaigana.ttf
 endif
 
 

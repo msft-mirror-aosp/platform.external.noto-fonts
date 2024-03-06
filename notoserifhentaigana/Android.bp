@@ -46,6 +46,6 @@ license {
 }
 
 prebuilt_font {
-    name: "NotoSerifHentaigana-EL.ttf",
+    name: "NotoSerifHentaigana.ttf",
     src: "NotoSerifHentaigana.ttf",
 }
