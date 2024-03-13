@@ -25,8 +25,12 @@ sourceSets {
 }
 
 compileJava {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+project.tasks.withType(JavaCompile).configureEach { task ->
+    // JDK 21 considers Java 8 an obsolete source and target value. Disable this warning.
+    task.options.compilerArgs.add("-Xlint:-options")
 }
 
 dependencies {
