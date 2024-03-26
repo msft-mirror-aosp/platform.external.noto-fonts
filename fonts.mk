@@ -24,6 +24,10 @@ endif
 endif
 
 
+ifeq ($(RELEASE_PACKAGE_HENTAIGANA_FONT), true)
+	PRODUCT_PACKAGES := NotoSerifHentaigana.ttf
+endif
+
 PRODUCT_PACKAGES := \
     $(PRODUCT_PACKAGES) \
     NotoColorEmoji.ttf \
