@@ -62,7 +62,7 @@ prebuilt_noto_sans_cjk {
     src: "NotoSansCJK-Regular.ttc",
     soong_config_variables: {
       use_var_font: {
-        src: "NotoSansCJK-VF.otf.ttc",
+        src: "NotoSansCJK-wght-400-900.otf.ttc",
       },
     },
 }
