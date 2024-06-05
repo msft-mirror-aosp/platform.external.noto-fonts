@@ -46,53 +46,87 @@ license {
     ],
 }
 
-prebuilt_font {
+soong_config_module_type {
+    name: "prebuilt_emoji_font",
+    module_type: "prebuilt_font",
+    config_namespace: "emoji_font",
+    value_variables: ["emoji_font_version"],
+    properties: ["src"],
+}
+
+prebuilt_emoji_font {
     name: "NotoColorEmoji.ttf",
-    src: "font/NotoColorEmojiCompat.ttf",
     dist: {
         targets: ["droidcore"],
+    },
+    // Need a default value because SDK build doesn't include fonts.mk.
+    src: "font/2.042/Noto-COLRv1-noflags.ttf",
+    soong_config_variables: {
+        emoji_font_version: {
+            src: "font/%s/Noto-COLRv1-noflags.ttf",
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "prebuilt_flag_emoji_font",
+    module_type: "prebuilt_font",
+    config_namespace: "flag_emoji_font",
+    value_variables: ["flag_emoji_font_version"],
+    properties: ["src"],
+}
+
+prebuilt_flag_emoji_font {
+    name: "NotoColorEmojiFlags.ttf",
+    dist: {
+        targets: ["droidcore"],
+    },
+    // Need a default value because SDK build doesn't include fonts.mk.
+    src: "font/2.042/NotoColorEmoji-flagsonly.ttf",
+    soong_config_variables: {
+        flag_emoji_font_version: {
+            src: "font/%s/NotoColorEmoji-flagsonly.ttf",
+        },
     },
 }
 
 prebuilt_font {
-    name: "NotoColorEmojiFlags.ttf",
-    src: "font/NotoColorEmojiFlags.ttf",
-}
-
-prebuilt_font {
     name: "NotoColorEmojiLegacy.ttf",
-    src: "font/NotoColorEmojiCompatLegacy.ttf",
+    src: "font/2.042/NotoColorEmoji-noflags.ttf",
     dist: {
         targets: ["droidcore"],
     },
 }
 
 android_test {
-  name: "EmojiCompatTest",
+    name: "EmojiCompatTest",
 
-  srcs: [
-    "tests/src/**/*.kt",
-    "tests/src/**/*.java"
-  ],
+    srcs: [
+        "tests/src/**/*.kt",
+        "tests/src/**/*.java",
+    ],
 
-  libs: [
-    "android.test.runner",
-    "android.test.base"
-  ],
+    libs: [
+        "android.test.runner",
+        "android.test.base",
+    ],
 
-  static_libs: [
-    "androidx.test.ext.junit",
-    "androidx.test.runner",
-    "androidx.test.rules",
-    "androidx.emoji_emoji",
-    "mockito-target",
-    "truth-prebuilt",
-  ],
+    static_libs: [
+        "androidx.test.ext.junit",
+        "androidx.test.runner",
+        "androidx.test.rules",
+        "androidx.emoji_emoji",
+        "mockito-target",
+        "truth",
+    ],
 
-  test_suites: ["general-tests"],
+    test_suites: ["general-tests"],
 
-  asset_dirs: ["font", "supported-emojis"],
+    asset_dirs: [
+        "font",
+        "supported-emojis",
+    ],
 
-  manifest: "tests/AndroidManifest.xml",
-  test_config: "tests/AndroidTest.xml",
+    manifest: "tests/AndroidManifest.xml",
+    test_config: "tests/AndroidTest.xml",
 }
