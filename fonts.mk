@@ -220,3 +220,7 @@ PRODUCT_PACKAGES := \
     NotoSerifThai-Regular.ttf \
     NotoSerifTibetan-VF.ttf \
     NotoSerifYezidi-VF.ttf
+
+
+# Set Hebrew font version
+$(call soong_config_set,hebrew_font,hebrew_font_version,$(RELEASE_PACKAGE_HEBREW_FONT_VERSION))
