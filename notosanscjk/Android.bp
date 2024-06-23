@@ -45,7 +45,24 @@ license {
     ],
 }
 
-prebuilt_font {
+soong_config_bool_variable {
+    name: "use_var_font",
+}
+
+soong_config_module_type {
+    name: "prebuilt_noto_sans_cjk",
+    module_type: "prebuilt_font",
+    config_namespace: "noto_sans_cjk_config",
+    bool_variables: ["use_var_font"],
+    properties: [ "src" ],
+}
+
+prebuilt_noto_sans_cjk {
     name: "NotoSansCJK-Regular.ttc",
     src: "NotoSansCJK-Regular.ttc",
+    soong_config_variables: {
+      use_var_font: {
+        src: "NotoSansCJK-VF.otf.ttc",
+      },
+    },
 }
