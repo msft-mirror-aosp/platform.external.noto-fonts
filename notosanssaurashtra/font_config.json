@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Saur",
+        "fonts": [
+            {
+                "file": "NotoSansSaurashtra-Regular.ttf",
+                "postScriptName": "NotoSansSaurashtra",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

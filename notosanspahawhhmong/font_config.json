@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Hmng",
+        "fonts": [
+            {
+                "file": "NotoSansPahawhHmong-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

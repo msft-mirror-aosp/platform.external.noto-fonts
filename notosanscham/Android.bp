@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansCham-Bold.ttf",
     src: "NotoSansCham-Bold.ttf",
 }
+
+filegroup {
+    name: "NotoSansCham",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCham-Bold.ttf",
+        "NotoSansCham-Regular.ttf",
+    ],
+}

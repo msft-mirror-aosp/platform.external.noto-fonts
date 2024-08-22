@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSerifKhmer-Bold.otf",
     src: "NotoSerifKhmer-Bold.otf",
 }
+
+filegroup {
+    name: "NotoSerifKhmer",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifKhmer-Regular.otf",
+        "NotoSerifKhmer-Bold.otf",
+    ],
+}

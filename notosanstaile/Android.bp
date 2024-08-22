@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTaiLe-Regular.ttf",
     src: "NotoSansTaiLe-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansTaiLe",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTaiLe-Regular.ttf",
+    ],
+}
