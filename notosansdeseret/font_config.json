@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Dsrt",
+        "fonts": [
+            {
+                "file": "NotoSansDeseret-Regular.ttf",
+                "postScriptName": "NotoSansDeseret",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

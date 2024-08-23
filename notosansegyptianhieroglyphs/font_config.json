@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Egyp",
+        "fonts": [
+            {
+                "file": "NotoSansEgyptianHieroglyphs-Regular.ttf",
+                "postScriptName": "NotoSansEgyptianHieroglyphs",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

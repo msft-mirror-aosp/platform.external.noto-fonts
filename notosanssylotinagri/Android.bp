@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSylotiNagri-Regular.ttf",
     src: "NotoSansSylotiNagri-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansSylotiNagri",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSylotiNagri-Regular.ttf",
+    ],
+}

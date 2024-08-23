@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Tagb",
+        "fonts": [
+            {
+                "file": "NotoSansTagbanwa-Regular.ttf",
+                "postScriptName": "NotoSansTagbanwa",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

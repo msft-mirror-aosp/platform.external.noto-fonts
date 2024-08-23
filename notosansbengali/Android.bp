@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBengali-VF.ttf",
     src: "NotoSansBengali-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansBengali-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBengali-VF.ttf",
+    ],
+}
