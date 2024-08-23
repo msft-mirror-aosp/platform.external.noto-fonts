@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansAhom-Regular.otf", // TODO: Rename to Serif
     src: "NotoSansAhom-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansAhom",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansAhom-Regular.otf",
+    ],
+}

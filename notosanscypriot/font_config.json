@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Cprt",
+        "fonts": [
+            {
+                "file": "NotoSansCypriot-Regular.ttf",
+                "postScriptName": "NotoSansCypriot",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

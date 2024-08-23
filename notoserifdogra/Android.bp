@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifDogra-Regular.ttf",
     src: "NotoSerifDogra-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSerifDogra",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifDogra-Regular.ttf",
+    ],
+}

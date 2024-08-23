@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansEthiopic-VF.ttf",
     src: "NotoSansEthiopic-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansEthiopic-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansEthiopic-VF.ttf",
+    ],
+}
