@@ -1,0 +1,16 @@
+[
+    {
+        "lang": "und-Gujr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifGujarati-VF.ttf",
+                "postScriptName": "NotoSerifGujarati-Regular",
+                "style": "normal",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansGujarati_und-Gujr"
+    }
+]

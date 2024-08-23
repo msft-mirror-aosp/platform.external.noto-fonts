@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansRunic-Regular.ttf",
     src: "NotoSansRunic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansRunic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansRunic-Regular.ttf",
+    ],
+}

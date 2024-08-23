@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Sinh",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifSinhala-VF.ttf",
+                "postScriptName": "NotoSerifSinhala-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansSinhala-VF_und-Sinh"
+    }
+]

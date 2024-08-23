@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansShavian-Regular.ttf",
     src: "NotoSansShavian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansShavian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansShavian-Regular.ttf",
+    ],
+}

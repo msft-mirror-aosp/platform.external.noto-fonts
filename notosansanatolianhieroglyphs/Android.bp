@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansAnatolianHieroglyphs-Regular.otf",
     src: "NotoSansAnatolianHieroglyphs-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansAnatolianHieroglyphs",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansAnatolianHieroglyphs-Regular.otf",
+    ],
+}

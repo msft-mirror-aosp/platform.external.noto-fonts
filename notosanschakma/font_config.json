@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Cakm",
+        "fonts": [
+            {
+                "file": "NotoSansChakma-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
