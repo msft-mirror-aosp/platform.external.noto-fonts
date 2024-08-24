@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Buhd",
+        "fonts": [
+            {
+                "file": "NotoSansBuhid-Regular.ttf",
+                "postScriptName": "NotoSansBuhid",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

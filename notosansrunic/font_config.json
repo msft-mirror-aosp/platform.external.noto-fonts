@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Runr",
+        "fonts": [
+            {
+                "file": "NotoSansRunic-Regular.ttf",
+                "postScriptName": "NotoSansRunic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

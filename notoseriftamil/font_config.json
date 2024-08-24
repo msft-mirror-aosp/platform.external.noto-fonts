@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Taml",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifTamil-VF.ttf",
+                "postScriptName": "NotoSerifTamil-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansTamil-VF_und-Taml"
+    }
+]

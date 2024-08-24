@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansNabataean-Regular.otf",
     src: "NotoSansNabataean-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansNabataean",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansNabataean-Regular.otf",
+    ],
+}

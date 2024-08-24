@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTaiTham-Regular.ttf",
     src: "NotoSansTaiTham-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansTaiTham",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTaiTham-Regular.ttf",
+    ],
+}

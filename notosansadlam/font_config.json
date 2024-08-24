@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Adlm",
+        "fonts": [
+            {
+                "file": "NotoSansAdlam-VF.ttf",
+                "postScriptName": "NotoSansAdlam-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

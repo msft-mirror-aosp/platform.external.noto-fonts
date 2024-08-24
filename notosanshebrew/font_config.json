@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Hebr",
+        "fonts": [
+            {
+                "file": "NotoSansHebrew-Regular.ttf",
+                "postScriptName": "NotoSansHebrew",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansHebrew-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "id": "NotoSansHebrew_und-Hebr"
+    }
+]

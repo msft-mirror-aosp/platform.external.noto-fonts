@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Olck",
+        "fonts": [
+            {
+                "file": "NotoSansOlChiki-Regular.ttf",
+                "postScriptName": "NotoSansOlChiki",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

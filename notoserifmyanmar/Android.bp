@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSerifMyanmar-Bold.otf",
     src: "NotoSerifMyanmar-Bold.otf",
 }
+
+filegroup {
+    name: "NotoSerifMyanmar",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifMyanmar-Regular.otf",
+        "NotoSerifMyanmar-Bold.otf",
+    ],
+}

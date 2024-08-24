@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansPalmyrene-Regular.otf",
     src: "NotoSansPalmyrene-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansPalmyrene",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansPalmyrene-Regular.otf",
+    ],
+}

@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansOriya-Regular.ttf",
     src: "NotoSansOriya-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOriya",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOriya-Bold.ttf",
+        "NotoSansOriya-Regular.ttf",
+    ],
+}
