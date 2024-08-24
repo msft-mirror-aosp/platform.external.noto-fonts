@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Beng",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansBengali-VF.ttf",
+                "postScriptName": "NotoSansBengali-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansBengali-VF_und-Beng"
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansInscriptionalParthian-Regular.ttf",
     src: "NotoSansInscriptionalParthian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansInscriptionalParthian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansInscriptionalParthian-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBuhid-Regular.ttf",
     src: "NotoSansBuhid-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBuhid",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBuhid-Regular.ttf",
+    ],
+}

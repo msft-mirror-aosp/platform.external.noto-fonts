@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Guru",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifGurmukhi-VF.ttf",
+                "postScriptName": "NotoSerifGurmukhi-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansGurmukhi-VF_und-Guru"
+    }
+]

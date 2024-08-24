@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSamaritan-Regular.ttf",
     src: "NotoSansSamaritan-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansSamaritan",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSamaritan-Regular.ttf",
+    ],
+}

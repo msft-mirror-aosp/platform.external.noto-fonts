@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansManichaean-Regular.otf",
     src: "NotoSansManichaean-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansManichaean",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansManichaean-Regular.otf",
+    ],
+}

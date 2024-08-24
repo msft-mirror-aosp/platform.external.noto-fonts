@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansJavanese-Regular.otf",
     src: "NotoSansJavanese-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansJavanese",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansJavanese-Regular.otf",
+    ],
+}

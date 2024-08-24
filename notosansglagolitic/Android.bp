@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansGlagolitic-Regular.ttf",
     src: "NotoSansGlagolitic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansGlagolitic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGlagolitic-Regular.ttf",
+    ],
+}

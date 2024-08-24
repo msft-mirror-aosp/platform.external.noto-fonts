@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Shrd",
+        "fonts": [
+            {
+                "file": "NotoSansSharada-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
