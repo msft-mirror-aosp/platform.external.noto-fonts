@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansPahawhHmong-Regular.otf",
     src: "NotoSansPahawhHmong-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansPahawhHmong",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansPahawhHmong-Regular.otf",
+    ],
+}

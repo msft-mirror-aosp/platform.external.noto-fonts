@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Tibt",
+        "fonts": [
+            {
+                "file": "NotoSerifTibetan-VF.ttf",
+                "postScriptName": "NotoSerifTibetan-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

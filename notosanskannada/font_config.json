@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Knda",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansKannada-VF.ttf",
+                "postScriptName": "NotoSansKannada-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansKannada-VF_und-Knda"
+    }
+]

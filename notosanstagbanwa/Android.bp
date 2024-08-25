@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTagbanwa-Regular.ttf",
     src: "NotoSansTagbanwa-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansTagbanwa",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTagbanwa-Regular.ttf",
+    ],
+}

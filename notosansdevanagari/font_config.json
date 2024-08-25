@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Deva",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansDevanagari-VF.ttf",
+                "postScriptName": "NotoSansDevanagari-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansDevanagari-VF_und-Deva"
+    }
+]

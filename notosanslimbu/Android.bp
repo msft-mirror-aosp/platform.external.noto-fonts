@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansLimbu-Regular.ttf",
     src: "NotoSansLimbu-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansLimbu",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansLimbu-Regular.ttf",
+    ],
+}

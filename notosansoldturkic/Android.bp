@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldTurkic-Regular.ttf",
     src: "NotoSansOldTurkic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOldTurkic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldTurkic-Regular.ttf",
+    ],
+}

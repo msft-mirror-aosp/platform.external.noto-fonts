@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansKayahLi-Regular.ttf",
     src: "NotoSansKayahLi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansKayahLi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKayahLi-Regular.ttf",
+    ],
+}

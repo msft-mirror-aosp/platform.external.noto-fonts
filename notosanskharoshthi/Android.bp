@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansKharoshthi-Regular.ttf",
     src: "NotoSansKharoshthi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansKharoshthi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKharoshthi-Regular.ttf",
+    ],
+}

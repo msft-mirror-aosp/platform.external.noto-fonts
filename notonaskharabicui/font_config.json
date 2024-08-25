@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Arab",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoNaskhArabicUI-Regular.ttf",
+                "postScriptName": "NotoNaskhArabicUI",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoNaskhArabicUI-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]
