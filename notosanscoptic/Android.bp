@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCoptic-Regular.ttf",
     src: "NotoSansCoptic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCoptic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCoptic-Regular.ttf",
+    ],
+}

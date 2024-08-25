@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Lana",
+        "fonts": [
+            {
+                "file": "NotoSansTaiTham-Regular.ttf",
+                "postScriptName": "NotoSansTaiTham",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

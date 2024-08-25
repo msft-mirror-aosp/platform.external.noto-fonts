@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldPermic-Regular.otf",
     src: "NotoSansOldPermic-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansOldPermic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldPermic-Regular.otf",
+    ],
+}

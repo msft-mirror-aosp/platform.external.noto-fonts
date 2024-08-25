@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Lina",
+        "fonts": [
+            {
+                "file": "NotoSansLinearA-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

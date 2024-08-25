@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBatak-Regular.ttf",
     src: "NotoSansBatak-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBatak",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBatak-Regular.ttf",
+    ],
+}

@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansGujaratiUI-Regular.ttf",
     src: "NotoSansGujaratiUI-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansGujaratiUI",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGujaratiUI-Bold.ttf",
+        "NotoSansGujaratiUI-Regular.ttf",
+    ],
+}
