@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Avst",
+        "fonts": [
+            {
+                "file": "NotoSansAvestan-Regular.ttf",
+                "postScriptName": "NotoSansAvestan",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

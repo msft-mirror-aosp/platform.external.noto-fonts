@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Bhks",
+        "fonts": [
+            {
+                "file": "NotoSansBhaiksuki-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

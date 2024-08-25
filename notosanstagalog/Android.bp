@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTagalog-Regular.ttf",
     src: "NotoSansTagalog-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansTagalog",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTagalog-Regular.ttf",
+    ],
+}

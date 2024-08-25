@@ -72,3 +72,12 @@ prebuilt_hebrew_font {
         },
     },
 }
+
+filegroup {
+    name: "NotoSansHebrew",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansHebrew-Bold.ttf",
+        "NotoSansHebrew-Regular.ttf",
+    ],
+}

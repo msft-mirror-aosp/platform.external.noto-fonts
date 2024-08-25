@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Vaii",
+        "fonts": [
+            {
+                "file": "NotoSansVai-Regular.ttf",
+                "postScriptName": "NotoSansVai",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

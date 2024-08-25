@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTamilUI-VF.ttf",
     src: "NotoSansTamilUI-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansTamilUI-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTamilUI-VF.ttf",
+    ],
+}

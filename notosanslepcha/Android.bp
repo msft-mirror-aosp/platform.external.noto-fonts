@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansLepcha-Regular.ttf",
     src: "NotoSansLepcha-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansLepcha",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansLepcha-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCarian-Regular.ttf",
     src: "NotoSansCarian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCarian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCarian-Regular.ttf",
+    ],
+}
