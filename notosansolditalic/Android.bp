@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldItalic-Regular.ttf",
     src: "NotoSansOldItalic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOldItalic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldItalic-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCuneiform-Regular.ttf",
     src: "NotoSansCuneiform-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCuneiform",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCuneiform-Regular.ttf",
+    ],
+}

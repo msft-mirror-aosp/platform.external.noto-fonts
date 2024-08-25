@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansInscriptionalPahlavi-Regular.ttf",
     src: "NotoSansInscriptionalPahlavi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansInscriptionalPahlavi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansInscriptionalPahlavi-Regular.ttf",
+    ],
+}

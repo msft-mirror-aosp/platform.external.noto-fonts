@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMalayalam-VF.ttf",
     src: "NotoSansMalayalam-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansMalayalam-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMalayalam-VF.ttf",
+    ],
+}

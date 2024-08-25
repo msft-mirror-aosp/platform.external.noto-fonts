@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Hano",
+        "fonts": [
+            {
+                "file": "NotoSansHanunoo-Regular.ttf",
+                "postScriptName": "NotoSansHanunoo",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

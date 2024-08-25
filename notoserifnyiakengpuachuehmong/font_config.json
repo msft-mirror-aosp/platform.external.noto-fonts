@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Hmnp",
+        "fonts": [
+            {
+                "file": "NotoSerifNyiakengPuachueHmong-VF.ttf",
+                "postScriptName": "NotoSerifHmongNyiakeng-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

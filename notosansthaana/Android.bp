@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansThaana-Bold.ttf",
     src: "NotoSansThaana-Bold.ttf",
 }
+
+filegroup {
+    name: "NotoSansThaana",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansThaana-Regular.ttf",
+        "NotoSansThaana-Bold.ttf",
+    ],
+}

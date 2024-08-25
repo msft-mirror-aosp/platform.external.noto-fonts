@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansHanifiRohingya-Regular.otf",
     src: "NotoSansHanifiRohingya-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansHanifiRohingya",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansHanifiRohingya-Regular.otf",
+    ],
+}

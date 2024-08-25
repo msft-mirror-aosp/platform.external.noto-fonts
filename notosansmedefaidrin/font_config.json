@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Medf",
+        "fonts": [
+            {
+                "file": "NotoSansMedefaidrin-VF.ttf",
+                "postScriptName": "NotoSansMedefaidrin-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

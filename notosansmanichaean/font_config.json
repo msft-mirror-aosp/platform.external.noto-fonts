@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Mani",
+        "fonts": [
+            {
+                "file": "NotoSansManichaean-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMiao-Regular.otf",
     src: "NotoSansMiao-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMiao",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMiao-Regular.otf",
+    ],
+}
