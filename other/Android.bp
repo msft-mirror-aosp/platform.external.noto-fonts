@@ -33,8 +33,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansAdlam-Regular.ttf",
-    src: "NotoSansAdlam-Regular.ttf",
+    name: "NotoSansAdlam-VF.ttf",
+    src: "NotoSansAdlam-VF.ttf",
 }
 
 prebuilt_font {
@@ -268,8 +268,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansJavanese-Regular.ttf",
-    src: "NotoSansJavanese-Regular.ttf",
+    name: "NotoSansJavanese-Regular.otf",
+    src: "NotoSansJavanese-Regular.otf",
 }
 
 prebuilt_font {
@@ -778,11 +778,6 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansTifinagh-Regular.ttf",
-    src: "NotoSansTifinagh-Regular.ttf",
-}
-
-prebuilt_font {
     name: "NotoSansUgaritic-Regular.ttf",
     src: "NotoSansUgaritic-Regular.ttf",
 }
@@ -863,18 +858,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSansGeorgian-Regular.otf",
-    src: "NotoSansGeorgian-Regular.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansGeorgian-Bold.otf",
-    src: "NotoSansGeorgian-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSansGeorgian-Medium.otf",
-    src: "NotoSansGeorgian-Medium.otf",
+    name: "NotoSansGeorgian-VF.ttf",
+    src: "NotoSansGeorgian-VF.ttf",
 }
 
 prebuilt_font {
@@ -923,6 +908,41 @@ prebuilt_font {
 }
 
 prebuilt_font {
+    name: "NotoSansGunjalaGondi-Regular.otf",
+    src: "NotoSansGunjalaGondi-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansHanifiRohingya-Regular.otf",
+    src: "NotoSansHanifiRohingya-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansKhojki-Regular.otf",
+    src: "NotoSansKhojki-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansMasaramGondi-Regular.otf",
+    src: "NotoSansMasaramGondi-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansTifinagh-Regular.otf",
+    src: "NotoSansTifinagh-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansWancho-Regular.otf",
+    src: "NotoSansWancho-Regular.otf",
+}
+
+prebuilt_font {
+    name: "NotoSansWarangCiti-Regular.otf",
+    src: "NotoSansWarangCiti-Regular.otf",
+}
+
+prebuilt_font {
     name: "NotoSerifArmenian-Regular.otf",
     src: "NotoSerifArmenian-Regular.otf",
 }
@@ -958,13 +978,8 @@ prebuilt_font {
 }
 
 prebuilt_font {
-    name: "NotoSerifGeorgian-Bold.otf",
-    src: "NotoSerifGeorgian-Bold.otf",
-}
-
-prebuilt_font {
-    name: "NotoSerifGeorgian-Regular.otf",
-    src: "NotoSerifGeorgian-Regular.otf",
+    name: "NotoSerifGeorgian-VF.ttf",
+    src: "NotoSerifGeorgian-VF.ttf",
 }
 
 prebuilt_font {
