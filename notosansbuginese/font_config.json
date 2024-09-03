@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Bugi",
+        "fonts": [
+            {
+                "file": "NotoSansBuginese-Regular.ttf",
+                "postScriptName": "NotoSansBuginese",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

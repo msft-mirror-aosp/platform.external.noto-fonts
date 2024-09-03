@@ -1,0 +1,18 @@
+[
+    {
+        "lang": "und-Thaa",
+        "fonts": [
+            {
+                "file": "NotoSansThaana-Regular.ttf",
+                "postScriptName": "NotoSansThaana",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansThaana-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

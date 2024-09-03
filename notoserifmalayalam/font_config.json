@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Mlym",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifMalayalam-VF.ttf",
+                "postScriptName": "NotoSerifMalayalam-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansMalayalam-VF_und-Mlym"
+    }
+]

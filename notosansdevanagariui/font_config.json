@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Deva",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansDevanagariUI-VF.ttf",
+                "postScriptName": "NotoSansDevanagariUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

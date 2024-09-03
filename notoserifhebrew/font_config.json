@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Hebr",
+        "fonts": [
+            {
+                "file": "NotoSerifHebrew-Regular.ttf",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSerifHebrew-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansHebrew_und-Hebr"
+    }
+]

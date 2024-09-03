@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansPauCinHau-Regular.otf",
     src: "NotoSansPauCinHau-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansPauCinHau",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansPauCinHau-Regular.otf",
+    ],
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Khoj",
+        "fonts": [
+            {
+                "file": "NotoSansKhojki-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

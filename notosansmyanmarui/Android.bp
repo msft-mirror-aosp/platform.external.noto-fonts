@@ -59,3 +59,13 @@ prebuilt_font {
     name: "NotoSansMyanmarUI-Bold.otf",
     src: "NotoSansMyanmarUI-Bold.otf",
 }
+
+filegroup {
+    name: "NotoSansMyanmarUI",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMyanmarUI-Medium.otf",
+        "NotoSansMyanmarUI-Regular.otf",
+        "NotoSansMyanmarUI-Bold.otf",
+    ],
+}

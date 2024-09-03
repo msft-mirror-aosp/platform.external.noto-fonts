@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Taml",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansTamilUI-VF.ttf",
+                "postScriptName": "NotoSansTamilUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]
