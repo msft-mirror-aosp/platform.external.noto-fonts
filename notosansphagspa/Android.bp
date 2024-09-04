@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansPhagsPa-Regular.ttf",
     src: "NotoSansPhagsPa-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansPhagsPa",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansPhagsPa-Regular.ttf",
+    ],
+}

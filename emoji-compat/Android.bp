@@ -107,8 +107,8 @@ android_test {
     ],
 
     libs: [
-        "android.test.runner",
-        "android.test.base",
+        "android.test.runner.stubs.system",
+        "android.test.base.stubs.system",
     ],
 
     static_libs: [
@@ -129,4 +129,13 @@ android_test {
 
     manifest: "tests/AndroidManifest.xml",
     test_config: "tests/AndroidTest.xml",
+}
+
+filegroup {
+    name: "NotoColorEmoji",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoColorEmoji.ttf",
+        "NotoColorEmojiFlags.ttf",
+    ],
 }

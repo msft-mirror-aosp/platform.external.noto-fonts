@@ -1,0 +1,20 @@
+[
+    {
+        "lang": "und-Khmr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifKhmer-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSerifKhmer-Bold.otf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansKhmer-VF_und-Khmr"
+    }
+]

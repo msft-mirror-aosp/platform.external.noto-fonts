@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Tglg",
+        "fonts": [
+            {
+                "file": "NotoSansTagalog-Regular.ttf",
+                "postScriptName": "NotoSansTagalog",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

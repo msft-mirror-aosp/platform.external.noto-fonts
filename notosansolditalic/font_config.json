@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Ital",
+        "fonts": [
+            {
+                "file": "NotoSansOldItalic-Regular.ttf",
+                "postScriptName": "NotoSansOldItalic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

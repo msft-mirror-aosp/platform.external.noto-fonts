@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Tale",
+        "fonts": [
+            {
+                "file": "NotoSansTaiLe-Regular.ttf",
+                "postScriptName": "NotoSansTaiLe",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

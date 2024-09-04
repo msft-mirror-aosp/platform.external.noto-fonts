@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Khmr",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansKhmerUI-Regular.ttf",
+                "postScriptName": "NotoSansKhmerUI",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansKhmerUI-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

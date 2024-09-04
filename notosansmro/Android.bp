@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMro-Regular.otf",
     src: "NotoSansMro-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMro",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMro-Regular.otf",
+    ],
+}

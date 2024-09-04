@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Mroo",
+        "fonts": [
+            {
+                "file": "NotoSansMro-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

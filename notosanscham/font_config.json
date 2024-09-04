@@ -1,0 +1,18 @@
+[
+    {
+        "lang": "und-Cham",
+        "fonts": [
+            {
+                "file": "NotoSansCham-Regular.ttf",
+                "postScriptName": "NotoSansCham",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansCham-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

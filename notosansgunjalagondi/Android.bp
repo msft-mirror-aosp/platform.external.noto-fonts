@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansGunjalaGondi-Regular.otf",
     src: "NotoSansGunjalaGondi-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansGunjalaGondi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGunjalaGondi-Regular.otf",
+    ],
+}

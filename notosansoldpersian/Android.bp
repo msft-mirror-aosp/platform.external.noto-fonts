@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldPersian-Regular.ttf",
     src: "NotoSansOldPersian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOldPersian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldPersian-Regular.ttf",
+    ],
+}

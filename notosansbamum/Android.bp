@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBamum-Regular.ttf",
     src: "NotoSansBamum-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBamum",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBamum-Regular.ttf",
+    ],
+}
