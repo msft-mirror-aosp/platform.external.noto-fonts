@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansAvestan-Regular.ttf",
     src: "NotoSansAvestan-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansAvestan",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansAvestan-Regular.ttf",
+    ],
+}

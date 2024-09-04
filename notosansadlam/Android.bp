@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansAdlam-VF.ttf",
     src: "NotoSansAdlam-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansAdlam-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansAdlam-VF.ttf",
+    ],
+}

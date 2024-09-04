@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifGujarati-VF.ttf",
     src: "NotoSerifGujarati-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSerifGujarati-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifGujarati-VF.ttf",
+    ],
+}

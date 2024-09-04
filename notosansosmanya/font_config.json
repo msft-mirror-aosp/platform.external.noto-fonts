@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Osma",
+        "fonts": [
+            {
+                "file": "NotoSansOsmanya-Regular.ttf",
+                "postScriptName": "NotoSansOsmanya",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
