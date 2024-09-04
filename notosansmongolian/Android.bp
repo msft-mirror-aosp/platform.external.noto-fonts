@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMongolian-Regular.ttf",
     src: "NotoSansMongolian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansMongolian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMongolian-Regular.ttf",
+    ],
+}

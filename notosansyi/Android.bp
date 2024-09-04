@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansYi-Regular.ttf",
     src: "NotoSansYi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansYi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansYi-Regular.ttf",
+    ],
+}

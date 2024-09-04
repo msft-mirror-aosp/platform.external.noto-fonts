@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMeroitic-Regular.otf",
     src: "NotoSansMeroitic-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMeroitic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMeroitic-Regular.otf",
+    ],
+}

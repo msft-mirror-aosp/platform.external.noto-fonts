@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMarchen-Regular.otf",
     src: "NotoSansMarchen-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMarchen",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMarchen-Regular.otf",
+    ],
+}

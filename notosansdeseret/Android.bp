@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansDeseret-Regular.ttf",
     src: "NotoSansDeseret-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansDeseret",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansDeseret-Regular.ttf",
+    ],
+}

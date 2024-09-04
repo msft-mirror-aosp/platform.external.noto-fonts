@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Mtei",
+        "fonts": [
+            {
+                "file": "NotoSansMeeteiMayek-Regular.ttf",
+                "postScriptName": "NotoSansMeeteiMayek",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansGurmukhiUI-VF.ttf",
     src: "NotoSansGurmukhiUI-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansGurmukhiUI-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGurmukhiUI-VF.ttf",
+    ],
+}

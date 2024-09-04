@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansChakma-Regular.otf",
     src: "NotoSansChakma-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansChakma",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansChakma-Regular.otf",
+    ],
+}

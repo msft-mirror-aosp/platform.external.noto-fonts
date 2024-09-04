@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifYezidi-VF.ttf",
     src: "NotoSerifYezidi-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSerifYezidi-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifYezidi-VF.ttf",
+    ],
+}

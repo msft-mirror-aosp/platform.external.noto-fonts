@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Telu",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifTelugu-VF.ttf",
+                "postScriptName": "NotoSerifTelugu-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansTelugu-VF_und-Telu"
+    }
+]

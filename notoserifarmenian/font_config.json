@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Armn",
+        "fonts": [
+            {
+                "file": "NotoSerifArmenian-VF.ttf",
+                "postScriptName": "NotoSerifArmenian-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansArmenian-VF_und-Armn"
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansHatran-Regular.otf",
     src: "NotoSansHatran-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansHatran",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansHatran-Regular.otf",
+    ],
+}

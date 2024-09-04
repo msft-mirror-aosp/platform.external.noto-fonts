@@ -54,15 +54,38 @@ soong_config_module_type {
     module_type: "prebuilt_font",
     config_namespace: "noto_sans_cjk_config",
     bool_variables: ["use_var_font"],
-    properties: [ "src" ],
+    properties: ["src"],
 }
 
 prebuilt_noto_sans_cjk {
     name: "NotoSansCJK-Regular.ttc",
     src: "NotoSansCJK-Regular.ttc",
     soong_config_variables: {
-      use_var_font: {
-        src: "NotoSansCJK-wght-400-900.otf.ttc",
-      },
+        use_var_font: {
+            src: "NotoSansCJK-wght-400-900.otf.ttc",
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "filegroup_for_vf",
+    module_type: "filegroup",
+    config_namespace: "noto_sans_cjk_config",
+    bool_variables: ["use_var_font"],
+    properties: ["srcs"],
+}
+
+filegroup_for_vf {
+    name: "NotoSansCJK",
+    required: [
+        "NotoSansCJK-Regular.ttc",
+    ],
+    soong_config_variables: {
+        use_var_font: {
+            srcs: ["font_config_vf.json"],
+            conditions_default: {
+                srcs: ["font_config.json"],
+            },
+        },
     },
 }

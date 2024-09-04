@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansUgaritic-Regular.ttf",
     src: "NotoSansUgaritic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansUgaritic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansUgaritic-Regular.ttf",
+    ],
+}

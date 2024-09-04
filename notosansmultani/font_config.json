@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Mult",
+        "fonts": [
+            {
+                "file": "NotoSansMultani-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

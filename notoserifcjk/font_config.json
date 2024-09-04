@@ -1,0 +1,58 @@
+[
+    {
+        "lang": "zh-Hans",
+        "fonts": [
+            {
+                "file": "NotoSerifCJK-Regular.ttc",
+                "postScriptName": "NotoSerifCJKjp-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "2"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansCJK_zh-Hans"
+    },
+    {
+        "lang": "zh-Hant,zh-Bopo",
+        "fonts": [
+            {
+                "file": "NotoSerifCJK-Regular.ttc",
+                "postScriptName": "NotoSerifCJKjp-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "3"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansCJK_zh-Hant,zh-Bopo"
+    },
+    {
+        "lang": "ja",
+        "fonts": [
+            {
+                "file": "NotoSerifCJK-Regular.ttc",
+                "postScriptName": "NotoSerifCJKjp-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "0"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansCJK_ja"
+    },
+    {
+        "lang": "ko",
+        "fonts": [
+            {
+                "file": "NotoSerifCJK-Regular.ttc",
+                "postScriptName": "NotoSerifCJKjp-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "1"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansCJK_ko"
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMedefaidrin-VF.ttf",
     src: "NotoSansMedefaidrin-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansMedefaidrin-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMedefaidrin-VF.ttf",
+    ],
+}
