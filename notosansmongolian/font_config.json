@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Mong",
+        "fonts": [
+            {
+                "file": "NotoSansMongolian-Regular.ttf",
+                "postScriptName": "NotoSansMongolian",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

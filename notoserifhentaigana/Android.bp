@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifHentaigana.ttf",
     src: "NotoSerifHentaigana.ttf",
 }
+
+filegroup {
+    name: "NotoSerifHentaigana",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifHentaigana.ttf",
+    ],
+}

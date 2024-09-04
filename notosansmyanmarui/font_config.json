@@ -1,0 +1,23 @@
+[
+    {
+        "lang": "und-Mymr",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansMyanmarUI-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansMyanmarUI-Medium.otf",
+                "weight": "500",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansMyanmarUI-Bold.otf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

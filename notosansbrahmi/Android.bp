@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBrahmi-Regular.ttf",
     src: "NotoSansBrahmi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBrahmi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBrahmi-Regular.ttf",
+    ],
+}

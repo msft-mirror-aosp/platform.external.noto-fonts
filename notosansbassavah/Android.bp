@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBassaVah-Regular.otf",
     src: "NotoSansBassaVah-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansBassaVah",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBassaVah-Regular.otf",
+    ],
+}

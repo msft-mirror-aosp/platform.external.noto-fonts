@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTaiViet-Regular.ttf",
     src: "NotoSansTaiViet-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansTaiViet",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTaiViet-Regular.ttf",
+    ],
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Khar",
+        "fonts": [
+            {
+                "file": "NotoSansKharoshthi-Regular.ttf",
+                "postScriptName": "NotoSansKharoshthi",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Cari",
+        "fonts": [
+            {
+                "file": "NotoSansCarian-Regular.ttf",
+                "postScriptName": "NotoSansCarian",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

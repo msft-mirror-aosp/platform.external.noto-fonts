@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Orya",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansOriya-Regular.ttf",
+                "postScriptName": "NotoSansOriya",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansOriya-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

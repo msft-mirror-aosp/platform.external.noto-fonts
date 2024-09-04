@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Laoo",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansLaoUI-Regular.ttf",
+                "postScriptName": "NotoSansLaoUI",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansLaoUI-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

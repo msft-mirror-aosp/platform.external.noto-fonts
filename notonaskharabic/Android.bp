@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoNaskhArabic-Regular.ttf",
     src: "NotoNaskhArabic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoNaskhArabic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoNaskhArabic-Bold.ttf",
+        "NotoNaskhArabic-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansArmenian-VF.ttf",
     src: "NotoSansArmenian-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansArmenian-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansArmenian-VF.ttf",
+    ],
+}
