@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSaurashtra-Regular.ttf",
     src: "NotoSansSaurashtra-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansSaurashtra",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSaurashtra-Regular.ttf",
+    ],
+}

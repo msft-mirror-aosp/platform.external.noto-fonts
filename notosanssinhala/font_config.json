@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Sinh",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansSinhala-VF.ttf",
+                "postScriptName": "NotoSansSinhala-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansSinhala-VF_und-Sinh"
+    }
+]

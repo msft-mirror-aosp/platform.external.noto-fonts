@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansModi-Regular.ttf",
     src: "NotoSansModi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansModi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansModi-Regular.ttf",
+    ],
+}

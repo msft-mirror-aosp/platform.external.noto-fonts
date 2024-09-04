@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCypriot-Regular.ttf",
     src: "NotoSansCypriot-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCypriot",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCypriot-Regular.ttf",
+    ],
+}

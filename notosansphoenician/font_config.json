@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Phnx",
+        "fonts": [
+            {
+                "file": "NotoSansPhoenician-Regular.ttf",
+                "postScriptName": "NotoSansPhoenician",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

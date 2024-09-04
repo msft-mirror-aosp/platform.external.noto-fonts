@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Prti",
+        "fonts": [
+            {
+                "file": "NotoSansInscriptionalParthian-Regular.ttf",
+                "postScriptName": "NotoSansInscriptionalParthian",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
