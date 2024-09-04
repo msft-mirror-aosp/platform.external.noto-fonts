@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSundanese-Regular.ttf",
     src: "NotoSansSundanese-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansSundanese",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSundanese-Regular.ttf",
+    ],
+}

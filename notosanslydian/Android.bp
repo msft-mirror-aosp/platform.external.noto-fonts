@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansLydian-Regular.ttf",
     src: "NotoSansLydian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansLydian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansLydian-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTakri-VF.ttf",
     src: "NotoSansTakri-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansTakri-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTakri-VF.ttf",
+    ],
+}

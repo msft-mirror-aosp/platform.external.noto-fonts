@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansGrantha-Regular.ttf",
     src: "NotoSansGrantha-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansGrantha",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGrantha-Regular.ttf",
+    ],
+}

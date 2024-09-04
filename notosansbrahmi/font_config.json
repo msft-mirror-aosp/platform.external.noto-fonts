@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Brah",
+        "fonts": [
+            {
+                "file": "NotoSansBrahmi-Regular.ttf",
+                "postScriptName": "NotoSansBrahmi",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

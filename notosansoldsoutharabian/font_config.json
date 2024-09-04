@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Sarb",
+        "fonts": [
+            {
+                "file": "NotoSansOldSouthArabian-Regular.ttf",
+                "postScriptName": "NotoSansOldSouthArabian",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
