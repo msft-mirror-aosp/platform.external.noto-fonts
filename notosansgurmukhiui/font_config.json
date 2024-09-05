@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Guru",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansGurmukhiUI-VF.ttf",
+                "postScriptName": "NotoSansGurmukhiUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

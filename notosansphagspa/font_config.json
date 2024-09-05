@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Phag",
+        "fonts": [
+            {
+                "file": "NotoSansPhagsPa-Regular.ttf",
+                "postScriptName": "NotoSansPhagsPa",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

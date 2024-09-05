@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSerifHebrew-Bold.ttf",
     src: "NotoSerifHebrew-Bold.ttf",
 }
+
+filegroup {
+    name: "NotoSerifHebrew",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifHebrew-Regular.ttf",
+        "NotoSerifHebrew-Bold.ttf",
+    ],
+}

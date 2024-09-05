@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSerifThai-Regular.ttf",
     src: "NotoSerifThai-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSerifThai",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifThai-Bold.ttf",
+        "NotoSerifThai-Regular.ttf",
+    ],
+}

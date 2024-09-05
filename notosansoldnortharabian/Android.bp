@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldNorthArabian-Regular.otf",
     src: "NotoSansOldNorthArabian-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansOldNorthArabian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldNorthArabian-Regular.otf",
+    ],
+}

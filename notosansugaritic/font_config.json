@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Ugar",
+        "fonts": [
+            {
+                "file": "NotoSansUgaritic-Regular.ttf",
+                "postScriptName": "NotoSansUgaritic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

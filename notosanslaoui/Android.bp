@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansLaoUI-Regular.ttf",
     src: "NotoSansLaoUI-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansLaoUI",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansLaoUI-Bold.ttf",
+        "NotoSansLaoUI-Regular.ttf",
+    ],
+}

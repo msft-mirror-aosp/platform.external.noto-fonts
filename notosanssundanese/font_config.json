@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Sund",
+        "fonts": [
+            {
+                "file": "NotoSansSundanese-Regular.ttf",
+                "postScriptName": "NotoSansSundanese",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

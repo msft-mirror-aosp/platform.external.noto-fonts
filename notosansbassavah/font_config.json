@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Bass",
+        "fonts": [
+            {
+                "file": "NotoSansBassaVah-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

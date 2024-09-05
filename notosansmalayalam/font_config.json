@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Mlym",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansMalayalam-VF.ttf",
+                "postScriptName": "NotoSansMalayalam-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansMalayalam-VF_und-Mlym"
+    }
+]

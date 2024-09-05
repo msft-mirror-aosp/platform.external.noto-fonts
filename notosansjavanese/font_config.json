@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Java",
+        "fonts": [
+            {
+                "file": "NotoSansJavanese-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

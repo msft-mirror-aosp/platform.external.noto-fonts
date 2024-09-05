@@ -1,0 +1,16 @@
+[
+    {
+        "lang": "ja",
+        "priority": 100,
+        "fonts": [
+            {
+                "file": "NotoSerifHentaigana.ttf",
+                "postScriptName": "NotoSerifHentaigana-ExtraLight",
+                "supportedAxes": "wght",
+                "axes": {
+                    "wght": "400"
+                }
+            }
+        ]
+    }
+]
