@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Glag",
+        "fonts": [
+            {
+                "file": "NotoSansGlagolitic-Regular.ttf",
+                "postScriptName": "NotoSansGlagolitic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

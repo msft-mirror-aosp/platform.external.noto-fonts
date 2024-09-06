@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Bali",
+        "fonts": [
+            {
+                "file": "NotoSansBalinese-Regular.ttf",
+                "postScriptName": "NotoSansBalinese",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

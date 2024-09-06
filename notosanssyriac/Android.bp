@@ -59,3 +59,13 @@ prebuilt_font {
     name: "NotoSansSyriacWestern-Regular.ttf",
     src: "NotoSansSyriacWestern-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansSyriac",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSyriacEstrangela-Regular.ttf",
+        "NotoSansSyriacWestern-Regular.ttf",
+        "NotoSansSyriacEastern-Regular.ttf",
+    ],
+}

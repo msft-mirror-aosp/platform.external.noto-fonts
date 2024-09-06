@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Lepc",
+        "fonts": [
+            {
+                "file": "NotoSansLepcha-Regular.ttf",
+                "postScriptName": "NotoSansLepcha",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

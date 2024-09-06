@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansWancho-Regular.otf",
     src: "NotoSansWancho-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansWancho",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansWancho-Regular.otf",
+    ],
+}

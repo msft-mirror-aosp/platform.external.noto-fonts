@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSharada-Regular.otf",
     src: "NotoSansSharada-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansSharada",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSharada-Regular.otf",
+    ],
+}

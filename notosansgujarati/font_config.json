@@ -1,0 +1,20 @@
+[
+    {
+        "lang": "und-Gujr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansGujarati-Regular.ttf",
+                "postScriptName": "NotoSansGujarati",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansGujarati-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "id": "NotoSansGujarati_und-Gujr"
+    }
+]

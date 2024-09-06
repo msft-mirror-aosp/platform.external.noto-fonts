@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Linb",
+        "fonts": [
+            {
+                "file": "NotoSansLinearB-Regular.ttf",
+                "postScriptName": "NotoSansLinearB",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

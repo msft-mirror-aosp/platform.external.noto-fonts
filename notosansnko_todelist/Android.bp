@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansNKo-Regular.ttf",
     src: "NotoSansNKo-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansNKo",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansNKo-Regular.ttf",
+    ],
+}

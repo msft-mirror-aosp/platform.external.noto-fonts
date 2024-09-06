@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSinhalaUI-VF.ttf",
     src: "NotoSansSinhalaUI-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansSinhalaUI-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSinhalaUI-VF.ttf",
+    ],
+}

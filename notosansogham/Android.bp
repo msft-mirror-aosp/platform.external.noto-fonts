@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOgham-Regular.ttf",
     src: "NotoSansOgham-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOgham",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOgham-Regular.ttf",
+    ],
+}
