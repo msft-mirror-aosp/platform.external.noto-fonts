@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCherokee-Regular.ttf",
     src: "NotoSansCherokee-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCherokee",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCherokee-Regular.ttf",
+    ],
+}

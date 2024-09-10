@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansGothic-Regular.ttf",
     src: "NotoSansGothic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansGothic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansGothic-Regular.ttf",
+    ],
+}

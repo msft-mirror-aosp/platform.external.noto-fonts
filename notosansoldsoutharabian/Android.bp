@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOldSouthArabian-Regular.ttf",
     src: "NotoSansOldSouthArabian-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOldSouthArabian",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOldSouthArabian-Regular.ttf",
+    ],
+}

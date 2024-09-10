@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifTibetan-VF.ttf",
     src: "NotoSerifTibetan-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSerifTibetan-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifTibetan-VF.ttf",
+    ],
+}

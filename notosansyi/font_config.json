@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Yiii",
+        "fonts": [
+            {
+                "file": "NotoSansYi-Regular.ttf",
+                "postScriptName": "NotoSansYi",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

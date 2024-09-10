@@ -1,0 +1,20 @@
+[
+    {
+        "lang": "und-Mymr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifMyanmar-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSerifMyanmar-Bold.otf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansMyanmar_und-Mymr"
+    }
+]

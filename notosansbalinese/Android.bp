@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBalinese-Regular.ttf",
     src: "NotoSansBalinese-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBalinese",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBalinese-Regular.ttf",
+    ],
+}

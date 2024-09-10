@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Ethi",
+        "fonts": [
+            {
+                "file": "NotoSerifEthiopic-VF.ttf",
+                "postScriptName": "NotoSerifEthiopic-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansEthiopic-VF_und-Ethi"
+    }
+]

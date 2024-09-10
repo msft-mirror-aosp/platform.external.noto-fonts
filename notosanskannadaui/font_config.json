@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Knda",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansKannadaUI-VF.ttf",
+                "postScriptName": "NotoSansKannadaUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

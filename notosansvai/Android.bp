@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansVai-Regular.ttf",
     src: "NotoSansVai-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansVai",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansVai-Regular.ttf",
+    ],
+}
