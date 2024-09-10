@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansOriyaUI-Bold.ttf",
     src: "NotoSansOriyaUI-Bold.ttf",
 }
+
+filegroup {
+    name: "NotoSansOriyaUI",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOriyaUI-Regular.ttf",
+        "NotoSansOriyaUI-Bold.ttf",
+    ],
+}

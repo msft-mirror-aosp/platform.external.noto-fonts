@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Beng",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansBengaliUI-VF.ttf",
+                "postScriptName": "NotoSansBengaliUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

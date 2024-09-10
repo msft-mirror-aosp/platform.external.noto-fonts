@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Xpeo",
+        "fonts": [
+            {
+                "file": "NotoSansOldPersian-Regular.ttf",
+                "postScriptName": "NotoSansOldPersian",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

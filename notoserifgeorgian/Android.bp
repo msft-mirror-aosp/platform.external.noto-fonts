@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifGeorgian-VF.ttf",
     src: "NotoSerifGeorgian-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSerifGeorgian-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifGeorgian-VF.ttf",
+    ],
+}

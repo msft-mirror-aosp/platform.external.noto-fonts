@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMasaramGondi-Regular.otf",
     src: "NotoSansMasaramGondi-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMasaramGondi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMasaramGondi-Regular.otf",
+    ],
+}

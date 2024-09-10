@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Geor,und-Geok",
+        "fonts": [
+            {
+                "file": "NotoSansGeorgian-VF.ttf",
+                "postScriptName": "NotoSansGeorgian-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansGeorgian-VF_und-Geor,und-Geok"
+    }
+]

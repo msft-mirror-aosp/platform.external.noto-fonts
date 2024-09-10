@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansNewTaiLue-Regular.ttf",
     src: "NotoSansNewTaiLue-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansNewTaiLue",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansNewTaiLue-Regular.ttf",
+    ],
+}

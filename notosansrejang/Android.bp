@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansRejang-Regular.ttf",
     src: "NotoSansRejang-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansRejang",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansRejang-Regular.ttf",
+    ],
+}

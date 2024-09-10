@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Sylo",
+        "fonts": [
+            {
+                "file": "NotoSansSylotiNagri-Regular.ttf",
+                "postScriptName": "NotoSansSylotiNagri",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
