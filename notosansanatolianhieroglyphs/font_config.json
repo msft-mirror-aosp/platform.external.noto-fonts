@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Hluw",
+        "fonts": [
+            {
+                "file": "NotoSansAnatolianHieroglyphs-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

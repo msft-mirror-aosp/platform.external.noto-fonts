@@ -1,0 +1,25 @@
+[
+    {
+        "lang": "und-Zsye",
+        "priority": 0,
+        "fonts": [
+            {
+                "file": "NotoColorEmoji.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    },
+    {
+        "lang": "und-Zsye",
+        // Flags emoji should come next to the regular NotoColorEmoji
+        "priority": 50,
+        "fonts": [
+            {
+                "file": "NotoColorEmojiFlags.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

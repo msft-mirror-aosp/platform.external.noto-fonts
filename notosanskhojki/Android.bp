@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansKhojki-Regular.otf",
     src: "NotoSansKhojki-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansKhojki",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKhojki-Regular.otf",
+    ],
+}
