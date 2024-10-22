@@ -7,6 +7,7 @@
                 "postScriptName": "NotoSansCJKJP-Regular",
                 "weight": "400",
                 "style": "normal",
+                "supportedAxes": "wght",
                 "index": "2"
             }
         ],
@@ -20,6 +21,7 @@
                 "postScriptName": "NotoSansCJKJP-Regular",
                 "weight": "400",
                 "style": "normal",
+                "supportedAxes": "wght",
                 "index": "3"
             }
         ],
@@ -33,6 +35,7 @@
                 "postScriptName": "NotoSansCJKJP-Regular",
                 "weight": "400",
                 "style": "normal",
+                "supportedAxes": "wght",
                 "index": "0"
             }
         ],
@@ -46,6 +49,7 @@
                 "postScriptName": "NotoSansCJKJP-Regular",
                 "weight": "400",
                 "style": "normal",
+                "supportedAxes": "wght",
                 "index": "1"
             }
         ],
