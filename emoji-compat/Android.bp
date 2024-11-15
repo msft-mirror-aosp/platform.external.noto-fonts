@@ -60,7 +60,7 @@ prebuilt_emoji_font {
         targets: ["droidcore"],
     },
     // Need a default value because SDK build doesn't include fonts.mk.
-    src: "font/2.042/Noto-COLRv1-noflags.ttf",
+    src: "font/2.047/Noto-COLRv1-noflags.ttf",
     soong_config_variables: {
         emoji_font_version: {
             src: "font/%s/Noto-COLRv1-noflags.ttf",
@@ -82,7 +82,7 @@ prebuilt_flag_emoji_font {
         targets: ["droidcore"],
     },
     // Need a default value because SDK build doesn't include fonts.mk.
-    src: "font/2.042/NotoColorEmoji-flagsonly.ttf",
+    src: "font/2.047/NotoColorEmoji-flagsonly.ttf",
     soong_config_variables: {
         flag_emoji_font_version: {
             src: "font/%s/NotoColorEmoji-flagsonly.ttf",
@@ -92,7 +92,7 @@ prebuilt_flag_emoji_font {
 
 prebuilt_font {
     name: "NotoColorEmojiLegacy.ttf",
-    src: "font/2.042/NotoColorEmoji-noflags.ttf",
+    src: "font/2.047/NotoColorEmoji-noflags.ttf",
     dist: {
         targets: ["droidcore"],
     },
