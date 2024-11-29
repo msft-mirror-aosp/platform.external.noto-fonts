@@ -20,6 +20,8 @@
 $(call soong_config_set,emoji_font,emoji_font_version,$(RELEASE_PACKAGE_EMOJI_FONT_VERSION))
 $(call soong_config_set,flag_emoji_font,flag_emoji_font_version,$(RELEASE_PACKAGE_FLAG_EMOJI_FONT_VERSION))
 
+$(call soong_config_set,noto_fonts,notosanskhmer_ver,$(RELEASE_PACKAGE_NOTO_SANS_KHMER_VERSION))
+
 PRODUCT_PACKAGES := \
     $(PRODUCT_PACKAGES) \
     NotoColorEmoji.ttf \
