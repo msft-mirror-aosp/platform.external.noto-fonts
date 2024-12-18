@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Thai",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansThaiUI-Regular.ttf",
+                "postScriptName": "NotoSansThaiUI",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSansThaiUI-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Soyo",
+        "fonts": [
+            {
+                "file": "NotoSansSoyombo-VF.ttf",
+                "postScriptName": "NotoSansSoyombo-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

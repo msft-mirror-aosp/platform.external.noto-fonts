@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Copt",
+        "fonts": [
+            {
+                "file": "NotoSansCoptic-Regular.ttf",
+                "postScriptName": "NotoSansCoptic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOsage-Regular.ttf",
     src: "NotoSansOsage-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOsage",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOsage-Regular.ttf",
+    ],
+}

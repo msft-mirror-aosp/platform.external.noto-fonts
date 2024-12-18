@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBhaiksuki-Regular.otf",
     src: "NotoSansBhaiksuki-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansBhaiksuki",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBhaiksuki-Regular.otf",
+    ],
+}

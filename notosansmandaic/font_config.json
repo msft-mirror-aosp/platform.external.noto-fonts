@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Mand",
+        "fonts": [
+            {
+                "file": "NotoSansMandaic-Regular.ttf",
+                "postScriptName": "NotoSansMandaic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

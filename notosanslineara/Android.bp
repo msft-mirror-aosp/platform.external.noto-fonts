@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansLinearA-Regular.otf",
     src: "NotoSansLinearA-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansLinearA",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansLinearA-Regular.otf",
+    ],
+}

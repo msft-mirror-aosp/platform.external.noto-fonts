@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Mlym",
+        "variant": "compact",
+        "fonts": [
+            {
+                "file": "NotoSansMalayalamUI-VF.ttf",
+                "postScriptName": "NotoSansMalayalamUI-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

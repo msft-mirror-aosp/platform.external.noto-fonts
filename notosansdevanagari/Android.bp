@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansDevanagari-VF.ttf",
     src: "NotoSansDevanagari-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansDevanagari-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansDevanagari-VF.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMandaic-Regular.ttf",
     src: "NotoSansMandaic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansMandaic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMandaic-Regular.ttf",
+    ],
+}

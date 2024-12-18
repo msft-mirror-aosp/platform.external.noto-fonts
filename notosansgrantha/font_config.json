@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Gran",
+        "fonts": [
+            {
+                "file": "NotoSansGrantha-Regular.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
