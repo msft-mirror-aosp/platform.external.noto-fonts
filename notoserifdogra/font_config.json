@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Dogr",
+        "fonts": [
+            {
+                "file": "NotoSerifDogra-Regular.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

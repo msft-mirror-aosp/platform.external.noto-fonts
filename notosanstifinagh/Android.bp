@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansTifinagh-Regular.otf",
     src: "NotoSansTifinagh-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansTifinagh",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansTifinagh-Regular.otf",
+    ],
+}

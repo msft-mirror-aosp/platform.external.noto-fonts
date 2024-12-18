@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansElbasan-Regular.otf",
     src: "NotoSansElbasan-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansElbasan",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansElbasan-Regular.otf",
+    ],
+}

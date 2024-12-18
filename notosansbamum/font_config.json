@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Bamu",
+        "fonts": [
+            {
+                "file": "NotoSansBamum-Regular.ttf",
+                "postScriptName": "NotoSansBamum",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

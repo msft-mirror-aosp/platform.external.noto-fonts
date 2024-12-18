@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Limb",
+        "fonts": [
+            {
+                "file": "NotoSansLimbu-Regular.ttf",
+                "postScriptName": "NotoSansLimbu",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "fonts": [
+            {
+                "file": "NotoSansSymbols-Regular-Subsetted.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ],
+        "id": "NotoSansSymbols-Regular-Subsetted"
+    },
+    {
+        "lang": "und-Zsym",
+        "fonts": [
+            {
+                "file": "NotoSansSymbols-Regular-Subsetted2.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

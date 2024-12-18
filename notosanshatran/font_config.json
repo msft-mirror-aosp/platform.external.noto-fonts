@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Hatr",
+        "fonts": [
+            {
+                "file": "NotoSansHatran-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

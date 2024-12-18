@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansCanadianAboriginal-Regular.ttf",
     src: "NotoSansCanadianAboriginal-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansCanadianAboriginal",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansCanadianAboriginal-Regular.ttf",
+    ],
+}

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMultani-Regular.otf",
     src: "NotoSansMultani-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansMultani",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMultani-Regular.otf",
+    ],
+}

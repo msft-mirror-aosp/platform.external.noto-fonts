@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Tavt",
+        "fonts": [
+            {
+                "file": "NotoSansTaiViet-Regular.ttf",
+                "postScriptName": "NotoSansTaiViet",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

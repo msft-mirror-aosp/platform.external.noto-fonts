@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Armn",
+        "fonts": [
+            {
+                "file": "NotoSansArmenian-VF.ttf",
+                "postScriptName": "NotoSansArmenian-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansArmenian-VF_und-Armn"
+    }
+]

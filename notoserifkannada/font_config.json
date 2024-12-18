@@ -1,0 +1,15 @@
+[
+    {
+        "lang": "und-Knda",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifKannada-VF.ttf",
+                "postScriptName": "NotoSerifKannada-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansKannada-VF_und-Knda"
+    }
+]

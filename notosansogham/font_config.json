@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Ogam",
+        "fonts": [
+            {
+                "file": "NotoSansOgham-Regular.ttf",
+                "postScriptName": "NotoSansOgham",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansEgyptianHieroglyphs-Regular.ttf",
     src: "NotoSansEgyptianHieroglyphs-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansEgyptianHieroglyphs",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansEgyptianHieroglyphs-Regular.ttf",
+    ],
+}
