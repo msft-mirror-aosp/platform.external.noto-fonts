@@ -1,0 +1,99 @@
+[
+    {
+        "lang": "und-Khmr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "100",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "26.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "200",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "39.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "300",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "58.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "400",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "90.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "500",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "108.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "600",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "128.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "700",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "151.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "800",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "169.0"
+                }
+            },
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "900",
+                "style": "normal",
+                "axes": {
+                    "wdth": "100.0",
+                    "wght": "190.0"
+                }
+            }
+        ],
+        "id": "NotoSansKhmer-VF_und-Khmr"
+    }
+]

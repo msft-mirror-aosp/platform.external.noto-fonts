@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansKaithi-Regular.ttf",
     src: "NotoSansKaithi-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansKaithi",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKaithi-Regular.ttf",
+    ],
+}

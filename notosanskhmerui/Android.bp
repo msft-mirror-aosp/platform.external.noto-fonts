@@ -54,3 +54,12 @@ prebuilt_font {
     name: "NotoSansKhmerUI-Bold.ttf",
     src: "NotoSansKhmerUI-Bold.ttf",
 }
+
+filegroup {
+    name: "NotoSansKhmerUI",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKhmerUI-Bold.ttf",
+        "NotoSansKhmerUI-Regular.ttf",
+    ],
+}

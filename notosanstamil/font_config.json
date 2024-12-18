@@ -1,0 +1,14 @@
+[
+    {
+        "lang": "und-Taml",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansTamil-VF.ttf",
+                "postScriptName": "NotoSansTamil-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansTamil-VF_und-Taml"
+    }
+]

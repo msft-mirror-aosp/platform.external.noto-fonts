@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Armi",
+        "fonts": [
+            {
+                "file": "NotoSansImperialAramaic-Regular.ttf",
+                "postScriptName": "NotoSansImperialAramaic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

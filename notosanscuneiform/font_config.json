@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Xsux",
+        "fonts": [
+            {
+                "file": "NotoSansCuneiform-Regular.ttf",
+                "postScriptName": "NotoSansCuneiform",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

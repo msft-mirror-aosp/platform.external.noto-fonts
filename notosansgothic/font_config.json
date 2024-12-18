@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Goth",
+        "fonts": [
+            {
+                "file": "NotoSansGothic-Regular.ttf",
+                "postScriptName": "NotoSansGothic",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

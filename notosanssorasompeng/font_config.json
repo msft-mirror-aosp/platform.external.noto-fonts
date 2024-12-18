@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Sora",
+        "fonts": [
+            {
+                "file": "NotoSansSoraSompeng-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]
