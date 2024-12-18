@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Palm",
+        "fonts": [
+            {
+                "file": "NotoSansPalmyrene-Regular.otf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

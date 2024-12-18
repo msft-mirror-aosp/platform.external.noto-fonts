@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansWarangCiti-Regular.otf",
     src: "NotoSansWarangCiti-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansWarangCiti",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansWarangCiti-Regular.otf",
+    ],
+}

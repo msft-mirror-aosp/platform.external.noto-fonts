@@ -1,0 +1,20 @@
+[
+    {
+        "lang": "und-Laoo",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSerifLao-Regular.ttf",
+                "weight": "400",
+                "style": "normal"
+            },
+            {
+                "file": "NotoSerifLao-Bold.ttf",
+                "weight": "700",
+                "style": "normal"
+            }
+        ],
+        "fallbackFor": "serif",
+        "target": "NotoSansLao_und-Laoo"
+    }
+]

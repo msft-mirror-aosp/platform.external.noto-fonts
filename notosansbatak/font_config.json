@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Batk",
+        "fonts": [
+            {
+                "file": "NotoSansBatak-Regular.ttf",
+                "postScriptName": "NotoSansBatak",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -59,3 +59,12 @@ prebuilt_font {
     name: "NotoSansSymbols-Regular-Subsetted2.ttf",
     src: "NotoSansSymbols-Regular-Subsetted2.ttf",
 }
+
+filegroup {
+    name: "NotoSansSymbols-Regular-Subsetted",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSymbols-Regular-Subsetted2.ttf",
+        "NotoSansSymbols-Regular-Subsetted.ttf",
+    ],
+}

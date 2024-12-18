@@ -1,0 +1,54 @@
+[
+    {
+        "lang": "zh-Hans",
+        "fonts": [
+            {
+                "file": "NotoSansCJK-Regular.ttc",
+                "postScriptName": "NotoSansCJKJP-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "2"
+            }
+        ],
+        "id": "NotoSansCJK_zh-Hans"
+    },
+    {
+        "lang": "zh-Hant,zh-Bopo",
+        "fonts": [
+            {
+                "file": "NotoSansCJK-Regular.ttc",
+                "postScriptName": "NotoSansCJKJP-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "3"
+            }
+        ],
+        "id": "NotoSansCJK_zh-Hant,zh-Bopo"
+    },
+    {
+        "lang": "ja",
+        "fonts": [
+            {
+                "file": "NotoSansCJK-Regular.ttc",
+                "postScriptName": "NotoSansCJKJP-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "0"
+            }
+        ],
+        "id": "NotoSansCJK_ja"
+    },
+    {
+        "lang": "ko",
+        "fonts": [
+            {
+                "file": "NotoSansCJK-Regular.ttc",
+                "postScriptName": "NotoSansCJKJP-Regular",
+                "weight": "400",
+                "style": "normal",
+                "index": "1"
+            }
+        ],
+        "id": "NotoSansCJK_ko"
+    }
+]

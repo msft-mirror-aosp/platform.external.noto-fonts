@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSoraSompeng-Regular.otf",
     src: "NotoSansSoraSompeng-Regular.otf",
 }
+
+filegroup {
+    name: "NotoSansSoraSompeng",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSoraSompeng-Regular.otf",
+    ],
+}

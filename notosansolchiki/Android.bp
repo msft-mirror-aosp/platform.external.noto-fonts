@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOlChiki-Regular.ttf",
     src: "NotoSansOlChiki-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOlChiki",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOlChiki-Regular.ttf",
+    ],
+}

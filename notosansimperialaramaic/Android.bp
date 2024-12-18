@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansImperialAramaic-Regular.ttf",
     src: "NotoSansImperialAramaic-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansImperialAramaic",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansImperialAramaic-Regular.ttf",
+    ],
+}

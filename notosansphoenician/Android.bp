@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansPhoenician-Regular.ttf",
     src: "NotoSansPhoenician-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansPhoenician",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansPhoenician-Regular.ttf",
+    ],
+}
