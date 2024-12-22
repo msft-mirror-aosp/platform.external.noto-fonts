@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSerifNyiakengPuachueHmong-VF.ttf",
     src: "NotoSerifNyiakengPuachueHmong-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSerifNyiakengPuachueHmong-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerifNyiakengPuachueHmong-VF.ttf",
+    ],
+}

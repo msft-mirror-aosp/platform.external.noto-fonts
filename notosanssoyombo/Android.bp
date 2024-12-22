@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSoyombo-VF.ttf",
     src: "NotoSansSoyombo-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansSoyombo-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSoyombo-VF.ttf",
+    ],
+}

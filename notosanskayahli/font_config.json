@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Kali",
+        "fonts": [
+            {
+                "file": "NotoSansKayahLi-Regular.ttf",
+                "postScriptName": "NotoSansKayahLi",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -130,3 +130,12 @@ android_test {
     manifest: "tests/AndroidManifest.xml",
     test_config: "tests/AndroidTest.xml",
 }
+
+filegroup {
+    name: "NotoColorEmoji",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoColorEmoji.ttf",
+        "NotoColorEmojiFlags.ttf",
+    ],
+}

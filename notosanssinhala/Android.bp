@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansSinhala-VF.ttf",
     src: "NotoSansSinhala-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansSinhala-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansSinhala-VF.ttf",
+    ],
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Samr",
+        "fonts": [
+            {
+                "file": "NotoSansSamaritan-Regular.ttf",
+                "postScriptName": "NotoSansSamaritan",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

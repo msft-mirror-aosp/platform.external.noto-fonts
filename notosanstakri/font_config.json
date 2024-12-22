@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Takr",
+        "fonts": [
+            {
+                "file": "NotoSansTakri-VF.ttf",
+                "postScriptName": "NotoSansTakri-Regular",
+                "supportedAxes": "wght"
+            }
+        ]
+    }
+]

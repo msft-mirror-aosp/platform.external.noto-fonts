@@ -64,3 +64,14 @@ prebuilt_font {
     name: "NotoSerif-Italic.ttf",
     src: "NotoSerif-Italic.ttf",
 }
+
+filegroup {
+    name: "NotoSerif",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSerif-Regular.ttf",
+        "NotoSerif-Bold.ttf",
+        "NotoSerif-Italic.ttf",
+        "NotoSerif-BoldItalic.ttf",
+    ],
+}

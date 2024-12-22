@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansKannadaUI-VF.ttf",
     src: "NotoSansKannadaUI-VF.ttf",
 }
+
+filegroup {
+    name: "NotoSansKannadaUI-VF",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansKannadaUI-VF.ttf",
+    ],
+}
