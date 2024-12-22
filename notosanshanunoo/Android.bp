@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansHanunoo-Regular.ttf",
     src: "NotoSansHanunoo-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansHanunoo",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansHanunoo-Regular.ttf",
+    ],
+}

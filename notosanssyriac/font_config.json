@@ -1,0 +1,35 @@
+[
+    {
+        "lang": "und-Syre",
+        "fonts": [
+            {
+                "file": "NotoSansSyriacEstrangela-Regular.ttf",
+                "postScriptName": "NotoSansSyriacEstrangela",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    },
+    {
+        "lang": "und-Syrn",
+        "fonts": [
+            {
+                "file": "NotoSansSyriacEastern-Regular.ttf",
+                "postScriptName": "NotoSansSyriacEastern",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    },
+    {
+        "lang": "und-Syrj",
+        "fonts": [
+            {
+                "file": "NotoSansSyriacWestern-Regular.ttf",
+                "postScriptName": "NotoSansSyriacWestern",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Ethi",
+        "fonts": [
+            {
+                "file": "NotoSansEthiopic-VF.ttf",
+                "postScriptName": "NotoSansEthiopic-Regular",
+                "supportedAxes": "wght"
+            }
+        ],
+        "id": "NotoSansEthiopic-VF_und-Ethi"
+    }
+]

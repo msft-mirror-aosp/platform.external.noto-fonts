@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansOsmanya-Regular.ttf",
     src: "NotoSansOsmanya-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansOsmanya",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansOsmanya-Regular.ttf",
+    ],
+}

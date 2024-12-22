@@ -1,0 +1,13 @@
+[
+    {
+        "lang": "und-Talu",
+        "fonts": [
+            {
+                "file": "NotoSansNewTaiLue-Regular.ttf",
+                "postScriptName": "NotoSansNewTaiLue",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

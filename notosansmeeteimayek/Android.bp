@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansMeeteiMayek-Regular.ttf",
     src: "NotoSansMeeteiMayek-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansMeeteiMayek",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansMeeteiMayek-Regular.ttf",
+    ],
+}

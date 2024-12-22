@@ -1,0 +1,12 @@
+[
+    {
+        "lang": "und-Cher",
+        "fonts": [
+            {
+                "file": "NotoSansCherokee-Regular.ttf",
+                "weight": "400",
+                "style": "normal"
+            }
+        ]
+    }
+]

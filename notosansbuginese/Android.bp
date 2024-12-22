@@ -49,3 +49,11 @@ prebuilt_font {
     name: "NotoSansBuginese-Regular.ttf",
     src: "NotoSansBuginese-Regular.ttf",
 }
+
+filegroup {
+    name: "NotoSansBuginese",
+    srcs: ["font_config.json"],
+    required: [
+        "NotoSansBuginese-Regular.ttf",
+    ],
+}
