@@ -45,32 +45,18 @@ license {
     ],
 }
 
-soong_config_module_type {
-    name: "prebuilt_hebrew_font",
-    module_type: "prebuilt_font",
-    config_namespace: "hebrew_font",
-    value_variables: ["hebrew_font_version"],
-    properties: ["src"],
-}
-
-prebuilt_hebrew_font {
+prebuilt_versioned_font {
     name: "NotoSansHebrew-Regular.ttf",
-    src: "1.04/NotoSansHebrew-Regular.ttf",
-    soong_config_variables: {
-        hebrew_font_version: {
-            src: "%s/NotoSansHebrew-Regular.ttf",
-        },
-    },
+    versionDir: ".",
+    versionFlag: "RELEASE_PACKAGE_HEBREW_FONT_VERSION",
+    defaultVersion: "1.04",
 }
 
-prebuilt_hebrew_font {
+prebuilt_versioned_font {
     name: "NotoSansHebrew-Bold.ttf",
-    src: "1.04/NotoSansHebrew-Bold.ttf",
-    soong_config_variables: {
-        hebrew_font_version: {
-            src: "./%s/NotoSansHebrew-Bold.ttf",
-        },
-    },
+    versionDir: ".",
+    versionFlag: "RELEASE_PACKAGE_HEBREW_FONT_VERSION",
+    defaultVersion: "1.04",
 }
 
 filegroup {
