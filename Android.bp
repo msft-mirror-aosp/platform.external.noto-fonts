@@ -244,3 +244,20 @@ filegroup {
         ":NotoSerifYezidi-VF",
     ],
 }
+
+bootstrap_go_package {
+    name: "soong-noto-fonts",
+    pkgPath: "android/soong/external/noto-fonts",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-cc",
+        "soong-genrule",
+    ],
+    srcs: [
+        "noto-fonts.go",
+    ],
+    pluginFor: ["soong_build"],
+}
