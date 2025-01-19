@@ -16,10 +16,6 @@
 # PRODUCT_COPY_FILES to install the font files, so that the NOTICE file can
 # get installed too.
 
-# Set emoji version in Android.bp
-$(call soong_config_set,emoji_font,emoji_font_version,$(RELEASE_PACKAGE_EMOJI_FONT_VERSION))
-$(call soong_config_set,flag_emoji_font,flag_emoji_font_version,$(RELEASE_PACKAGE_FLAG_EMOJI_FONT_VERSION))
-
 PRODUCT_PACKAGES := \
     $(PRODUCT_PACKAGES) \
     NotoColorEmoji.ttf \
@@ -213,7 +209,3 @@ PRODUCT_PACKAGES := \
     NotoSerifThai-Regular.ttf \
     NotoSerifTibetan-VF.ttf \
     NotoSerifYezidi-VF.ttf
-
-
-# Set Hebrew font version
-$(call soong_config_set,hebrew_font,hebrew_font_version,$(RELEASE_PACKAGE_HEBREW_FONT_VERSION))
