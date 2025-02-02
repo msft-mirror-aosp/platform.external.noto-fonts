@@ -19,9 +19,20 @@ package {
     ],
 }
 
+genrule {
+    name: "noto-emoji-compat-flatbuffers-generated-java",
+    srcs: ["data/emoji_metadata.fbs"],
+    out: [
+        "androidx/text/emoji/flatbuffer/MetadataItem.java",
+        "androidx/text/emoji/flatbuffer/MetadataList.java",
+    ],
+    cmd: "$(location flatc) --java -o $(genDir) $(in)",
+    tools: ["flatc"],
+}
+
 java_library {
     name: "noto-emoji-compat-flatbuffers-java",
-    srcs: ["src/java/**/*.java"],
+    srcs: [":noto-emoji-compat-flatbuffers-generated-java"],
     sdk_version: "current",
 
     static_libs: ["flatbuffers-java"],
