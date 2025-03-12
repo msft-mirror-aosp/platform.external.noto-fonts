@@ -45,15 +45,45 @@ license {
     ],
 }
 
-prebuilt_font {
-    name: "NotoSansKhmer-VF.ttf",
-    src: "NotoSansKhmer-VF.ttf",
+soong_config_module_type {
+    name: "prebuilt_notosanskhmer",
+    module_type: "prebuilt_font",
+    config_namespace: "noto_fonts",
+    value_variables: ["notosanskhmer_ver"],
+    properties: ["src"],
 }
 
-filegroup {
+prebuilt_notosanskhmer {
+    name: "NotoSansKhmer-VF.ttf",
+    soong_config_variables: {
+        notosanskhmer_ver: {
+            src: "%s/NotoSansKhmer-VF.ttf",
+            conditions_default: {
+                src: "1.901/NotoSansKhmer-VF.ttf"
+            }
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "filegroup_notosanskhmer",
+    module_type: "filegroup",
+    config_namespace: "noto_fonts",
+    value_variables: ["notosanskhmer_ver"],
+    properties: ["srcs"],
+}
+
+filegroup_notosanskhmer {
     name: "NotoSansKhmer-VF",
-    srcs: ["font_config.json"],
     required: [
-        "NotoSansKhmer-VF.ttf",
+        "NotoSansKhmer-VF.ttf"
     ],
+    soong_config_variables: {
+        notosanskhmer_ver: {
+          srcs: ["%s/font_config.json"],
+          conditions_default: {
+              srcs: ["1.901/font_config.json"],
+          },
+        }
+    }
 }

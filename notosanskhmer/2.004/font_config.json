@@ -1,0 +1,19 @@
+[
+    {
+        "lang": "und-Khmr",
+        "variant": "elegant",
+        "fonts": [
+            {
+                "file": "NotoSansKhmer-VF.ttf",
+                "postScriptName": "NotoSansKhmer-Regular",
+                "weight": "400",
+                "style": "normal",
+                "supportedAxes": "wght",
+                "axes": {
+                    "wdth": "100.0"
+                }
+            }
+        ],
+        "id": "NotoSansKhmer-VF_und-Khmr"
+    }
+]

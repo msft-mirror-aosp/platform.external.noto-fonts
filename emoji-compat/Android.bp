@@ -68,7 +68,7 @@ prebuilt_versioned_font {
 
 prebuilt_font {
     name: "NotoColorEmojiLegacy.ttf",
-    src: "font/2.042/NotoColorEmoji-noflags.ttf",
+    src: "font/2.047/NotoColorEmoji-noflags.ttf",
     dist: {
         targets: ["droidcore"],
     },
