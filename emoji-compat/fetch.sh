@@ -25,6 +25,23 @@ set +e
 
 METADATA_GIT="https://github.com/googlefonts/emojicompat.git"
 FONT_GIT="https://github.com/googlefonts/noto-emoji.git"
+FONT_PATH=""
+
+while [[ $# -gt 0 ]]; do
+   case "$1" in
+      --font_path)
+         FONT_PATH=$(readlink -f "$2")
+         shift 2
+         ;;
+      --font_path=*)
+         FONT_PATH=$(readlink -f "${1#*=}")
+         shift
+         ;;
+      *)
+         shift
+         ;;
+   esac
+done
 
 SCRIPT_DIR=$(readlink -f $(dirname -- "$0"))
 TMP_DIR=$(mktemp -d)
@@ -46,7 +63,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "METADATA:    $METADATA_GIT"
-echo "FONT:        $FONT_GIT"
+echo "FONT:        ${FONT_PATH:-$FONT_GIT}"
 echo "Updating in: $SCRIPT_DIR"
 
 # confirm directory is clean
@@ -81,9 +98,13 @@ METADATA_FILE="./emojicompat/src/emojicompat/emoji_metadata.txt"
 cat $METADATA_FILE | awk 'sub("$", "\r")' > emoji_metadata.txt
 
 # pull the font
-git clone --quiet --depth 1 --branch main $FONT_GIT
-confirm_git_commit "noto-emoji"
-cp ./noto-emoji/fonts/NotoColorEmoji-emojicompat.ttf ./NewFont.ttf
+if [[ -n "$FONT_PATH" ]]; then
+   cp "$FONT_PATH" ./NewFont.ttf
+else
+   git clone --quiet --depth 1 --branch main $FONT_GIT
+   confirm_git_commit "noto-emoji"
+   cp ./noto-emoji/fonts/NotoColorEmoji-emojicompat.ttf ./NewFont.ttf
+fi
 
 ttx -o NewFont.ttx NewFont.ttf 2> /dev/null
 grep -q 'header version="2.0"' NewFont.ttx
